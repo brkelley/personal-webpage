@@ -1,12 +1,5 @@
-var routerApp = angular.module('routerApp', ['ui.router']);
+(function() {
 
-routerApp.config(function($stateProvider, $urlRouterProvider){
+    angular.module('brendankelley', []);
 
-    $urlRouterProvider.otherwise('/home');
-
-    $stateProvider
-        .state('home', {
-            url: '/home',
-            template: '<h1>HOME!</h1>'
-        })
-});
+})();

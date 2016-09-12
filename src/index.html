@@ -9,9 +9,9 @@
     <!-- CDNs -->
 
     <!-- Angular CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/angular2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
     <!-- UI Router CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <!-- BootStrap CDN -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -25,17 +25,39 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
 
-    <!-- Modules -->
+    <!-- Main Module -->
     <script src="script/app.js"></script>
+    <!-- Tab Controller -->
+    <script src="script/tab/tab-controller.js"></script>
 
 
     <!-- Jumbotron -->
     <div class="jumbotron">
         <h1>Brendan Kelley</h1>
+        <div class="navigation" ng-controller="TabController">
+            <div class="nav-item" ui-sref="home" ng-class="{active:activeTab('home')}">
+                Home
+            </div>
+            <div class="nav-item" ui-sref="resume" ng-class="{active:activeTab('resume')}">
+                Resume
+            </div>
+            <div class="nav-item">
+                Work Experience
+            </div>
+            <div class="nav-item">
+                Github
+            </div>
+            <div class="nav-item">
+                Classes
+            </div>
+        </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse" role="navigation">
+    <div ui-view></div>
+
+    <!-- Navigation - extension of the jumbotron -->
+
+    <!--<nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <a class="navbar-brand" ui-sref="#"></a>
         </div>
@@ -44,7 +66,7 @@
             <li><a ui-sref="#">About</a></li>
             <li><a ui-sref="#">Home</a></li>
         </ul>
-    </nav>
+    </nav>-->
 
 </body>
 </html>

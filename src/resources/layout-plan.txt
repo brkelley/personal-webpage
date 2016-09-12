@@ -4,7 +4,6 @@ Under that are tabs:
 
     - Biography (default)
     - Resume
-    - Classes done at NC State
     - Work Experience
     - Github
     - Classes

@@ -1,10 +1,31 @@
+/**
+ * Jumbotron
+ */
 .jumbotron {
     height: 250px;
-    color: black;
+    color: darkred;
     text-align: center;
-    text-shadow: #444 0 1px 1px;
     background-image: url('../resources/images/mountainview.gif');
     background-size: cover;
-    background-position: 0px -50px;
+    background-position: 0 -80px;
     margin: 0;
+}
+
+.navigation {
+    display: flex;
+}
+
+.nav-item {
+    flex: 1 0 auto;
+    color: white;
+    padding: 10px;
+    margin-top: 63px;
+}
+
+.nav-item:hover {
+    background-color: rgba(139, 0, 0, 0.4);
+}
+
+.active {
+    color: purple;
 }

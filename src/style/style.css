@@ -1,31 +1,52 @@
 /**
- * Jumbotron
+ * Fonts
  */
-.jumbotron {
-    height: 250px;
-    color: darkred;
-    text-align: center;
-    background-image: url('../resources/images/mountainview.gif');
-    background-size: cover;
-    background-position: 0 -80px;
+@font-face {
+    font-family: BalooPaaji;
+    src: url(https://fonts.gstatic.com/s/baloopaaji/v1/zcOxsgjL4TWgCkkTN4pnQYgp9Q8gbYrhqGlRav_IXfk.woff2);
+}
+
+/**
+ * Top Navbar
+ */
+.navigation {
+    font-family: BalooPaaji;
+    background-color: #CC0000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0;
     margin: 0;
 }
 
-.navigation {
-    display: flex;
-}
+/**
+ * Jumbotron
+ */
+/*.jumbotron {*/
+    /*height: 250px;*/
+    /*color: darkred;*/
+    /*text-align: center;*/
+    /*background-image: url('../resources/images/mountainview.gif');*/
+    /*background-size: cover;*/
+    /*background-position: 0 -80px;*/
+    /*margin: 0;*/
+/*}*/
 
-.nav-item {
-    flex: 1 0 auto;
-    color: white;
-    padding: 10px;
-    margin-top: 63px;
-}
+/*.navigation {*/
+    /*display: flex;*/
+/*}*/
 
-.nav-item:hover {
-    background-color: rgba(139, 0, 0, 0.4);
-}
+/*.nav-item {*/
+    /*flex: 1 0 auto;*/
+    /*color: white;*/
+    /*padding: 10px;*/
+    /*margin-top: 63px;*/
+/*}*/
 
-.active {
-    background-color: rgba(139, 0, 0, 0.75);
-}
+/*.nav-item:hover {*/
+    /*background-color: rgba(139, 0, 0, 0.4);*/
+/*}*/
+
+/*.active {*/
+    /*background-color: rgba(139, 0, 0, 0.75);*/
+/*}*/

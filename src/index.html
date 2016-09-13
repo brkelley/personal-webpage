@@ -29,44 +29,38 @@
     <script src="script/app.js"></script>
     <!-- Tab Controller -->
     <script src="script/tab/tab-controller.js"></script>
+    <!-- Home Page -->
+    <script src="script/home/home.module.js"></script>
+    <script src="script/home/home.controller.js"></script>
 
+    <!-- Navbar -->
+    <div class="navigation">
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-        <h1>Brendan Kelley</h1>
-        <div class="navigation" ng-controller="TabController">
-            <div class="nav-item" ui-sref="home" ng-class="{active:activeTab('home')}">
-                Home
-            </div>
-            <div class="nav-item" ui-sref="resume" ng-class="{active:activeTab('resume')}">
-                Resume
-            </div>
-            <div class="nav-item">
-                Work Experience
-            </div>
-            <div class="nav-item">
-                Github
-            </div>
-            <div class="nav-item">
-                Classes
-            </div>
-        </div>
     </div>
 
+    <!-- Jumbotron -->
+    <!--<div class="jumbotron">-->
+        <!--<h1>Brendan Kelley</h1>-->
+        <!--<div class="navigation" ng-controller="TabController">-->
+            <!--<div class="nav-item" ui-sref="home" ng-class="{active:activeTab('home')}">-->
+                <!--Home-->
+            <!--</div>-->
+            <!--<div class="nav-item" ui-sref="resume" ng-class="{active:activeTab('resume')}">-->
+                <!--Resume-->
+            <!--</div>-->
+            <!--<div class="nav-item" ui-sref="work experience" ng-class="{active:activeTab('work-experience')}">-->
+                <!--Work Experience-->
+            <!--</div>-->
+            <!--<div class="nav-item" ui-sref="github" ng-class="{active:activeTab('github')}">-->
+                <!--Github-->
+            <!--</div>-->
+            <!--<div class="nav-item" ui-sref="classes" ng-class="{active:activeTab('classes')}">-->
+                <!--Classes-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
     <div ui-view></div>
-
-    <!-- Navigation - extension of the jumbotron -->
-
-    <!--<nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" ui-sref="#"></a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a ui-sref="#">Home</a></li>
-            <li><a ui-sref="#">About</a></li>
-            <li><a ui-sref="#">Home</a></li>
-        </ul>
-    </nav>-->
 
 </body>
 </html>

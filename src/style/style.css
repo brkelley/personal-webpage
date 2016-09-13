@@ -27,5 +27,5 @@
 }
 
 .active {
-    color: purple;
+    background-color: rgba(139, 0, 0, 0.75);
 }

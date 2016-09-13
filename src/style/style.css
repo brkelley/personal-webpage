@@ -6,47 +6,54 @@
     src: url(https://fonts.gstatic.com/s/baloopaaji/v1/zcOxsgjL4TWgCkkTN4pnQYgp9Q8gbYrhqGlRav_IXfk.woff2);
 }
 
+@font-face {
+    font-family: Amatic;
+    src: url(https://fonts.gstatic.com/s/amaticsc/v8/DPPfSFKxRTXvae2bKDzp5JBw1xU1rKptJj_0jans920.woff2);
+}
+
 /**
  * Top Navbar
  */
 .navigation {
     font-family: BalooPaaji;
+    font-size: 115%;
     background-color: #CC0000;
     width: 100%;
     position: fixed;
     top: 0;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.link-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+.link-button {
+    margin: 10px;
+}
+.name-navbar {
+    margin: 10px;
+    font-size: 120%;
+}
+.navlinks {
+    display: flex;
+    justify-content: flex-end;
+}
+.navlink {
+    padding: 10px;
+}
+.navlink:hover {
+    background-color: #AA0000;
+    cursor: pointer;
+}
+.active {
+    text-decoration: underline;
 }
 
 /**
- * Jumbotron
+ * Height requirement for stage (to avoid navbar)
  */
-/*.jumbotron {*/
-    /*height: 250px;*/
-    /*color: darkred;*/
-    /*text-align: center;*/
-    /*background-image: url('../resources/images/mountainview.gif');*/
-    /*background-size: cover;*/
-    /*background-position: 0 -80px;*/
-    /*margin: 0;*/
-/*}*/
-
-/*.navigation {*/
-    /*display: flex;*/
-/*}*/
-
-/*.nav-item {*/
-    /*flex: 1 0 auto;*/
-    /*color: white;*/
-    /*padding: 10px;*/
-    /*margin-top: 63px;*/
-/*}*/
-
-/*.nav-item:hover {*/
-    /*background-color: rgba(139, 0, 0, 0.4);*/
-/*}*/
-
-/*.active {*/
-    /*background-color: rgba(139, 0, 0, 0.75);*/
-/*}*/
+.stage {
+    margin-top: 50px;
+}

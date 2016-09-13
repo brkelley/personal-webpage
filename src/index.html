@@ -36,6 +36,9 @@
     <!-- Navbar -->
     <div class="navigation">
         <div class="link-buttons">
+            <div class="name-navbar">
+                Brendan Kelley
+            </div>
             <div class="link-button">
                 LinkedIn
             </div>
@@ -43,88 +46,26 @@
                 GitHub
             </div>
         </div>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
-    </div><div>
-        <h1>Hello!</h1>
-    </div>
-    <div>
-        <h1>Hello!</h1>
+        <div class="navlinks" ng-controller="TabController">
+            <div class="navlink" ui-sref="home" ng-class="{active:activeTab('home')}">
+                Home
+            </div>
+            <div class="navlink" ui-sref="about me" ng-class="{active:activeTab('about-me')}">
+                About Me
+            </div>
+            <div class="navlink" ui-sref="resume" ng-class="{active:activeTab('resume')}">
+                Resume
+            </div>
+            <div class="navlink" ui-sref="projects" ng-class="{active:activeTab('projects')}">
+                Projects
+            </div>
+            <div class="navlink" ui-sref="ems 480" ng-class="{active:activeTab('ems-480')}">
+                EMS 480
+            </div>
+        </div>
     </div>
 
-
-    <!-- Jumbotron -->
-    <!--<div class="jumbotron">-->
-        <!--<h1>Brendan Kelley</h1>-->
-        <!--<div class="navigation" ng-controller="TabController">-->
-            <!--<div class="nav-item" ui-sref="home" ng-class="{active:activeTab('home')}">-->
-                <!--Home-->
-            <!--</div>-->
-            <!--<div class="nav-item" ui-sref="resume" ng-class="{active:activeTab('resume')}">-->
-                <!--Resume-->
-            <!--</div>-->
-            <!--<div class="nav-item" ui-sref="work experience" ng-class="{active:activeTab('work-experience')}">-->
-                <!--Work Experience-->
-            <!--</div>-->
-            <!--<div class="nav-item" ui-sref="github" ng-class="{active:activeTab('github')}">-->
-                <!--Github-->
-            <!--</div>-->
-            <!--<div class="nav-item" ui-sref="classes" ng-class="{active:activeTab('classes')}">-->
-                <!--Classes-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <div ui-view></div>
+    <div ui-view class="stage"></div>
 
 </body>
 </html>

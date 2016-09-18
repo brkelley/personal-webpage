@@ -52,6 +52,14 @@
 }
 
 /**
+ * HOME PAGE
+ */
+.video-background {
+    z-index: -5;
+    opacity: 0.6;
+}
+
+/**
  * Height requirement for stage (to avoid navbar)
  */
 .stage {

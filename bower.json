@@ -1,0 +1,10 @@
+{
+  "name": "personal-webpage",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular":   "latest",
+    "jquery":    "latest",
+    "ui-router": "latest"
+  },
+  "analytics": false
+}

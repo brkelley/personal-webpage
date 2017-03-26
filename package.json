@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "description": "Personal webpage for Brendan Kelley",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brkelley/PersonalWebpage.git"
   },
-  "author": "",
+  "author": "Brendan Kelley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brkelley/PersonalWebpage/issues"
@@ -19,5 +16,9 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
   }
 }

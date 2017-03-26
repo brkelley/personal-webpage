@@ -25,11 +25,6 @@
                 template: '<h1>Projects!</h1>'
             })
 
-            .state('ems 480', {
-                url: '/ems-480',
-                template: '<h1>EMS 480!</h1>'
-            })
-
     };
 
     appConfig.$inject = ['$stateProvider', '$urlRouterProvider'];

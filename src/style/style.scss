@@ -14,54 +14,17 @@
 /**
  * Top Navbar
  */
-.navigation {
-  font-family: BalooPaaji;
-  font-size: 115%;
-  background-color: #CC0000;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-}
-.link-buttons {
-  display: flex;
-  justify-content: flex-start;
-}
-.link-button {
-  margin: 10px;
-}
-.name-navbar {
-  margin: 10px;
-  font-size: 120%;
-}
-.navlinks {
-  display: flex;
-  justify-content: flex-end;
-}
-.navlink {
-  padding: 10px;
-}
-.navlink:hover {
-  background-color: #AA0000;
-  cursor: pointer;
-}
-.active {
-  text-decoration: underline;
-}
+body {
+  margin: 0px;
 
-/**
- * HOME PAGE
- */
-.video-background {
-  z-index: -5;
-  opacity: 0.6;
-}
-
-/**
- * Height requirement for stage (to avoid navbar)
- */
-.stage {
-  margin-top: 50px;
+  .navigation {
+    font-family: BalooPaaji;
+    font-size: 3vh;
+    background-color: #CC0000;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+  }
 }

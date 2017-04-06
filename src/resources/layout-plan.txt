@@ -1,9 +1,0 @@
-Fun picture on top with my name
-
-Under that are tabs:
-
-    - Biography (default)
-    - Resume
-    - Work Experience
-    - Github
-    - Classes

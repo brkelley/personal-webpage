@@ -1,0 +1,32 @@
+@import "../../styles";
+
+.header-container {
+    font-family: 'Acme', sans-serif;
+    background-color: $ncsu-red;
+    color: white;
+
+    .display-name {
+        font-size: 4vh;
+        text-align: center;
+        padding: 2vh;
+        width: 100%;
+    }
+
+    .tab-container {
+        padding: 1vh;
+        font-size: 2.2vh;
+        display: flex;
+        justify-content: space-around;
+
+        .tab {
+            flex: 0 1 25%;
+            text-align: center;
+        }
+
+        .tab:hover {
+            cursor: pointer;
+            color: #eeeeee;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 @import "../../styles";
 
 .header-container {
-    font-family: 'Acme', sans-serif;
+    //font-family: 'Acme', sans-serif;
     background-color: $ncsu-red;
     color: white;
 
@@ -10,6 +10,7 @@
         text-align: center;
         padding: 2vh;
         width: 100%;
+        cursor: pointer;
     }
 
     .tab-container {

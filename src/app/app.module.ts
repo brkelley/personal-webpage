@@ -7,13 +7,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { BiographyComponent } from './biography/biography.component';
 import { ResumeComponent } from './resume/resume.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomepageComponent },
     { path: 'resume', component: ResumeComponent },
-    { path: 'biography', component: BiographyComponent },
+    { path: 'projects', component: ProjectsComponent },
+    { path: 'about-me', component: AboutmeComponent },
     {
         path: '',
         redirectTo: '/home',
@@ -27,8 +29,9 @@ const appRoutes: Routes = [
         AppComponent,
         HeaderNavComponent,
         HomepageComponent,
-        BiographyComponent,
-        ResumeComponent
+        ResumeComponent,
+        ProjectsComponent,
+        AboutmeComponent
     ],
     imports: [
         RouterModule.forRoot(appRoutes),

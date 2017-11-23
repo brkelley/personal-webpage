@@ -1,9 +1,9 @@
 <div class="header-container">
-    <div class="display-name">
+    <div class="display-name" (click)="goTo('home')">
         {{displayName}}
     </div>
     <div class="tab-container">
-        <div class="tab" *ngFor="let tab of tabs">
+        <div class="tab" *ngFor="let tab of tabs" (click)="goTo(tab)">
              {{tab}}
         </div>
     </div>

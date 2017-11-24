@@ -10,19 +10,19 @@ describe('HeaderNavComponent', () => {
   let fixture: ComponentFixture<HeaderNavComponent>;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HeaderNavComponent ]
-    })
-    .compileComponents();
+  TestBed.configureTestingModule({
+    declarations: [ HeaderNavComponent ]
+  })
+  .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderNavComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  fixture = TestBed.createComponent(HeaderNavComponent);
+  component = fixture.componentInstance;
+  fixture.detectChanges();
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+  expect(component).toBeTruthy();
   });
 });

@@ -4,11 +4,11 @@ describe('personal-webpage App', function() {
   let page: PersonalWebpagePage;
 
   beforeEach(() => {
-    page = new PersonalWebpagePage();
+  page = new PersonalWebpagePage();
   });
 
   it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+  page.navigateTo();
+  expect(page.getParagraphText()).toEqual('app works!');
   });
 });

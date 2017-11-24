@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ResumeComponent } from './resume.component';
+import { ProjectNavbarComponent } from './project-navbar.component';
 
-describe('ResumeComponent', () => {
-  let component: ResumeComponent;
-  let fixture: ComponentFixture<ResumeComponent>;
+describe('ProjectNavbarComponent', () => {
+  let component: ProjectNavbarComponent;
+  let fixture: ComponentFixture<ProjectNavbarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ResumeComponent]
+      declarations: [ ProjectNavbarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResumeComponent);
+    fixture = TestBed.createComponent(ProjectNavbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

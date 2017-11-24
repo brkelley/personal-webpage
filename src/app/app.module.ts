@@ -8,38 +8,40 @@ import { AppComponent } from './app.component';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ResumeComponent } from './resume/resume.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { ProjectsModule } from './projects/projects.module';
+import { ProjectsComponent } from './projects/projects.component';
 
 const appRoutes: Routes = [
-    { path: 'home', component: HomepageComponent },
-    { path: 'resume', component: ResumeComponent },
-    { path: 'projects', component: ProjectsComponent },
-    { path: 'about-me', component: AboutmeComponent },
-    {
-        path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
-    },
-    { path: '**', redirectTo: '/home' }
+  { path: 'home', component: HomepageComponent },
+  { path: 'resume', component: ResumeComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'about-me', component: AboutmeComponent },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeaderNavComponent,
-        HomepageComponent,
-        ResumeComponent,
-        ProjectsComponent,
-        AboutmeComponent
-    ],
-    imports: [
-        RouterModule.forRoot(appRoutes),
-        BrowserModule,
-        FormsModule,
-        HttpModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HeaderNavComponent,
+    HomepageComponent,
+    ResumeComponent,
+    AboutmeComponent
+  ],
+  imports: [
+    RouterModule.forRoot(appRoutes),
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ProjectsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

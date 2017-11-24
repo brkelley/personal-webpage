@@ -1,33 +1,38 @@
 @import "../../styles";
 
 .header-container {
-    //font-family: 'Acme', sans-serif;
-    background-color: $ncsu-red;
-    color: white;
+  //font-family: 'Acme', sans-serif;
+  background-color: $cerulean;
+  color: $morning-sky;
 
-    .display-name {
-        font-size: 4vh;
-        text-align: center;
-        padding: 2vh;
-        width: 100%;
-        cursor: pointer;
+  .display-name {
+    font-size: 4vh;
+    text-align: center;
+    padding: 2vh;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .tab-container {
+    padding: 1vh;
+    font-size: 2.2vh;
+    display: flex;
+    justify-content: space-around;
+
+    .tab {
+      flex: 0 1 auto;
+      text-align: center;
+      color: $mist;
+
+      .active-tab {
+        color: $morning-sky;
+      }
     }
 
-    .tab-container {
-        padding: 1vh;
-        font-size: 2.2vh;
-        display: flex;
-        justify-content: space-around;
-
-        .tab {
-            flex: 0 1 auto;
-            text-align: center;
-        }
-
-        .tab:hover {
-            cursor: pointer;
-            color: #eeeeee;
-            text-decoration: underline;
-        }
+    .tab:hover {
+      cursor: pointer;
+      color: $morning-sky;
+      text-decoration: underline;
     }
+  }
 }

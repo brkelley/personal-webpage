@@ -1,0 +1,39 @@
+@import '../../../styles';
+
+.project-navbar-container {
+  width: 200px;
+  height: 100%;
+  background-color: $mist;
+  color: $cerulean;
+
+  .project-tabs {
+    display: flex;
+    flex-direction: column;
+
+    .project-tab-container {
+
+      .active-tab {
+        background-color: $morning-sky;
+      }
+
+      .project-tab {
+        text-align: center;
+        align-self: center;
+        font-size: 1.1rem;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        cursor: pointer;
+      }
+
+      .tab-separator {
+        border: solid 3px $honey;
+        width: 80%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

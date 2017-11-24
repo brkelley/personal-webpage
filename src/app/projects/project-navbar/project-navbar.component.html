@@ -1,3 +1,13 @@
-<p>
-  project-navbar works!
-</p>
+<div class="project-navbar-container">
+  <div class="project-tabs">
+    <div class="project-tab-container" *ngFor="let project of projects; let idx = index">
+      <hr class="tab-separator" *ngIf="idx !== 0" />
+      <div class="project-tab"
+           (click)="goTo(project)"
+           [ngClass]="{ 'active-tab': (project === activeTab) }"
+      >
+        {{project}}
+      </div>
+    </div>
+  </div>
+</div>

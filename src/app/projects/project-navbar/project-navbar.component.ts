@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-project-navbar',
+  selector: 'project-navbar',
   templateUrl: './project-navbar.component.html',
   styleUrls: ['./project-navbar.component.scss']
 })
 export class ProjectNavbarComponent implements OnInit {
+
+  projects: string[] = ['Personal Webpage', 'Band Bot', 'test', 'test2'];
+  activeTab: string = 'Personal Webpage';
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  goTo(chosenTab: string) {
+    this.activeTab = chosenTab;
+  }
 }

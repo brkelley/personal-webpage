@@ -1,9 +1,9 @@
 @import "../../styles";
 
 .header-container {
-  //font-family: 'Acme', sans-serif;
   background-color: $cerulean;
   color: $morning-sky;
+  height: 15vh;
 
   .display-name {
     font-size: 4vh;

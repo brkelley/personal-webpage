@@ -11,6 +11,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsModule } from './projects/projects.module';
 import { ProjectsComponent } from './projects/projects.component';
+import { ConcertSpotifyerModule } from './concert-spotifyer/concert-spotifyer.module';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomepageComponent },
@@ -38,7 +39,9 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    ProjectsModule
+    ProjectsModule,
+    ConcertSpotifyerModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

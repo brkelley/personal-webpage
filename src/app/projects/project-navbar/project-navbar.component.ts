@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectNavbarComponent implements OnInit {
 
-  projects: string[] = ['Personal Webpage', 'Band Bot', 'test', 'test2'];
+  projects: string[] = ['Personal Webpage'];
   activeTab: string = 'Personal Webpage';
 
   constructor() { }

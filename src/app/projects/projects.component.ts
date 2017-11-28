@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BandBotService } from '../concert-spotifyer/band-bot.service';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private bandBotService: BandBotService) { }
 
   ngOnInit() {
+    this.bandBotService.createBandBotSpotify();
   }
 
 }

@@ -1,0 +1,167 @@
+{
+  "contactInformation": {
+    "address": "308 S. Blount Street",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "abbrState": "NC",
+    "zipCode": 27601,
+    "phoneNumber": 9192709877,
+    "email": "brendan.bebo.kelley@gmail.com"
+  },
+  "knownLanguages": [
+    "Java",
+    "Javascript",
+    "HTML / CSS / Sass",
+    "Angular 2",
+    "AngularJS",
+    "NodeJS / ExpressJS",
+    "MongoDB",
+    "SQL / PL-SQL",
+    "C / C++",
+    "YAML / RAML",
+    "Assembly (MASM)"
+  ],
+  "education": [
+    {
+      "school": "NC State University",
+      "graduationDate": "Dec 2016",
+      "highestRank": "BS in Computer Science"
+    },
+    {
+      "school": "William G. Enloe High School",
+      "graduationDate": "Jun 2012",
+      "highestRank": "Diploma"
+    }
+  ],
+  "professionalExperience": [
+    {
+      "title": "Associate Software Engineer",
+      "company": "Fidelity Investments",
+      "startDate": "Jan 2017",
+      "endDate": "Present",
+      "responsibilities": [
+        "Went through 3 months of classroom training that taught SQL, Java, OOD, TDD, Javascript/Angular, REST/SOAP, and C#",
+        "Created a full-stack (SQL, Java, Spring, & Angular2) mutual fund groups editing tool as a 3-month project training",
+        "Built a front end for an Investment Compliance Engine that allowed users to create rules, lists, and datasets for mutual fund validations",
+        "Designed and implemented a framework for forms & grids to be driven through metadata in a database",
+        "Created a unit testing framework to help beginner Angular2 developers to unit test easier"
+      ],
+      "technologies": [
+        "Angular 2",
+        "HTML",
+        "Sass",
+        "Karma/Jasmine",
+        "REST API",
+        "Spring",
+        "SQL & PL-SQL"
+      ],
+      "relevantWebsites": []
+    },
+    {
+      "title": "Research Assistant",
+      "company": "NC State University",
+      "startDate": "Aug 2016",
+      "endDate": "Jul 2016",
+      "responsibilities": [
+        "Gathered data on students' projects through their number of commits, commit messages, and test cases passed/failed in a database",
+        "Gamified introductory Computer Science projects by adding Jenkins plugin, giving students badges for accomplishing various tasks"
+      ],
+      "technologies": [
+        "SQL",
+        "Jenkins",
+        "XML Plugins"
+      ],
+      "relevantWebsites": []
+    },
+    {
+      "title": "Teaching Assistant",
+      "company": "NC State University",
+      "startDate": "Jan 2014",
+      "endDate": "Jun 2016",
+      "responsibilities": [
+        "Sat in an Introduction to Java class, helping students master the basics of Java and teaching the course when the teacher is absent",
+        "Graded students' projects, tests, and homeworks",
+        "Held office hours once a week to help students with their projects and any topics they are struggling with"
+      ],
+      "relevantWebsites": []
+    },
+    {
+      "title": "Automation Engineer Intern",
+      "company": "Credit Suisse",
+      "startDate": "Jun 2016",
+      "endDate": "Aug 2016",
+      "responsibilities": [
+        "Updated and solidified Credit Suisse's custom Java library for simplified, Excel-based mobile testing using Appium and Perfecto",
+        "Developed a website using a MEAN stack that created, removed, and turned on/off Selenium Grid hubs and nodes remotely onto virtual machines",
+        "Researched, gathered requirements, and created mockups for a crowdsorucing application for the benefit of CS employees"
+      ],
+      "technologies": [
+        "Appium",
+        "Perfecto",
+        "Excel",
+        "MongoDB",
+        "ExpressJS",
+        "AngularJS",
+        "NodeJS",
+        "CSS",
+        "Selenium Grid"
+      ],
+      "relevantWebsites": []
+    },
+    {
+      "title": "Mobile Development Intern",
+      "company": "PointSource, LLC",
+      "startDate": "Jun 2015",
+      "endDate": "Dec 2015",
+      "responsibilities": [
+        "Learned about writing mobile applications and how to develop a useful, working mobile app in a restricted amount of time",
+        "Worked with team to develop an internal app on a MEAN stack through Cordova to check in & out testing devices via a QR code",
+        "Created user stories, led standups, and acted as Scrum Master for the second half of the project"
+      ],
+      "technologies": [
+        "MongoDB",
+        "ExpressJS",
+        "AngularJS",
+        "NodeJS",
+        "Sass",
+        "Cordova",
+        "JIRA"
+      ],
+      "relevantWebsites": []
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "Bandwidth.com",
+      "startDate": "Jun 2014",
+      "endDate": "Jan 2015",
+      "responsibilities": [
+        "Learned about the software engineering environment and how to develop projects in Agile",
+        "Wrote, cleaned, and upgraded software APIs using RAML as a medium",
+        "Cleaned and revamped API website"
+      ],
+      "relevantWebsites": ["https://api.test.inetwork.com/apidocks"]
+    }
+  ],
+  "otherExperience": [
+    {
+      "title": "Student Ambassador",
+      "location": "NC State University",
+      "startDate": "Aug 2015",
+      "endDate": "Jul 2016",
+      "responsibilities": [
+        "Represented NC State's Computer Science department in various events",
+        "Spoke with students and parents about the benefits of majoring in Computer Science"
+      ]
+    },
+    {
+      "title": "Officer",
+      "location": "ACM/AITP club at NC State University",
+      "startDate": "Aug 2015",
+      "endDate": "Jan 2016",
+      "responsibilities": [
+        "Scheduled meetings for the ACM/AITP club",
+        "Organized events, booked venues, and advertised for ACM/AITP-hosted events"
+      ]
+    }
+  ]
+}

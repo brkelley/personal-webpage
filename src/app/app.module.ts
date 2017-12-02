@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -12,6 +11,11 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsModule } from './projects/projects.module';
 import { ProjectsComponent } from './projects/projects.component';
 import { ConcertSpotifyerModule } from './concert-spotifyer/concert-spotifyer.module';
+import { ResumeModule } from './resume/resume.module';
+import { DataApiModule } from './data-api/data-api.module';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomepageComponent },
@@ -31,17 +35,22 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderNavComponent,
     HomepageComponent,
-    ResumeComponent,
     AboutmeComponent
   ],
   imports: [
+
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right'
+    }),
+    HttpClientModule,
     FormsModule,
-    HttpModule,
     ProjectsModule,
-    ConcertSpotifyerModule
-
+    ResumeModule,
+    ConcertSpotifyerModule,
+    DataApiModule
   ],
   providers: [],
   bootstrap: [AppComponent]

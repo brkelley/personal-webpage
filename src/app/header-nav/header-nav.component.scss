@@ -1,15 +1,14 @@
 @import "../../styles";
 
 .header-container {
-  background-color: $cerulean;
-  color: $morning-sky;
+  background-color: $nature-green;
+  color: $nature-light-blue;
   height: 15vh;
 
   .display-name {
     font-size: 4vh;
     text-align: center;
     padding: 2vh;
-    width: 100%;
     cursor: pointer;
   }
 
@@ -22,16 +21,16 @@
     .tab {
       flex: 0 1 auto;
       text-align: center;
-      color: $mist;
+      color: $nature-light-blue;
 
       .active-tab {
-        color: $morning-sky;
+        color: $nature-white;
       }
     }
 
     .tab:hover {
       cursor: pointer;
-      color: $morning-sky;
+      color: $nature-white;
       text-decoration: underline;
     }
   }

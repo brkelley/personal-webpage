@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Acme|Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$website-main-light: #D4A59A;
+$website-main-medium: #BC4639;
+$website-main-dark: #5C2018;
+$website-accent: #4285F4;
+$website-white: #F3E0DC;
 
 $nature-green: #687864;
 $nature-dark-blue: #31708E;
@@ -9,7 +16,7 @@ $nature-light-blue: #8FC1E3;
 $nature-white: #F7F9Fb;
 
 body {
-  font-family: 'Vollkorn SC', serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   height: 100vh;
 }

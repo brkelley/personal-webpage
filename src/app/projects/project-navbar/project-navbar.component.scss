@@ -3,8 +3,7 @@
 .project-navbar-container {
   width: 200px;
   height: 100%;
-  background-color: $nature-dark-blue;
-  color: $nature-dark-blue;
+  background-color: $website-main-light;
 
   .project-tabs {
     display: flex;
@@ -13,8 +12,8 @@
     .project-tab-container {
 
       .active-tab {
-        background-color: $nature-white;
-        color: $nature-dark-blue !important;
+        background-color: $website-main-dark;
+        color: $website-white !important;
       }
 
       .project-tab {
@@ -26,11 +25,11 @@
         margin-top: 2vh;
         margin-bottom: 2vh;
         cursor: pointer;
-        color: $nature-light-blue;
+        color: $website-main-dark;
       }
 
       .tab-separator {
-        border: solid 3px $nature-green;
+        border: solid 3px $website-main-medium;
         width: 80%;
         text-align: center;
         margin-top: 0;

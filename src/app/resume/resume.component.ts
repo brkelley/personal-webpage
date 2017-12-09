@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeDataApiService } from '../data-api/resume-data-api/resume-data-api.service';
 import { Resume } from '../models/resume/resume.model';
+import { Experience } from '../models/resume/experience.model';
 
 @Component({
   selector: 'app-resume',
@@ -9,7 +10,7 @@ import { Resume } from '../models/resume/resume.model';
 })
 export class ResumeComponent implements OnInit {
 
-  resumeData: Resume;
+  resume: Resume;
 
   constructor(private resumeDataApi: ResumeDataApiService) { }
 
@@ -19,8 +20,7 @@ export class ResumeComponent implements OnInit {
 
   getResume() {
     this.resumeDataApi.getResume().subscribe(data => {
-      console.log(data);
-      this.resumeData = data;
+      this.resume = data;
     });
   }
 }

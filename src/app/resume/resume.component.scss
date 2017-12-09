@@ -1,0 +1,18 @@
+@import '../../styles';
+
+.resume-wrapper {
+  background-color: $website-white;
+  padding: 10px;
+
+  .experience-container {
+    display: flex;
+
+    .experience-label {
+      width: 30%;
+    }
+
+    .experience-list-wrapper {
+      width: 70%;
+    }
+  }
+}

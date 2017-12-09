@@ -39,6 +39,7 @@
       "company": "Fidelity Investments",
       "startDate": "Jan 2017",
       "endDate": "Present",
+      "type": "full-time",
       "responsibilities": [
         "Went through 3 months of classroom training that taught SQL, Java, OOD, TDD, Javascript/Angular, REST/SOAP, and C#",
         "Created a full-stack (SQL, Java, Spring, & Angular2) mutual fund groups editing tool as a 3-month project training",
@@ -63,6 +64,7 @@
       "company": "NC State University",
       "startDate": "Aug 2016",
       "endDate": "Jul 2016",
+      "type": "part-time",
       "responsibilities": [
         "Gathered data on students' projects through their number of commits, commit messages, and test cases passed/failed in a database",
         "Gamified introductory Computer Science projects by adding Jenkins plugin, giving students badges for accomplishing various tasks"
@@ -80,6 +82,7 @@
       "company": "NC State University",
       "startDate": "Jan 2014",
       "endDate": "Jun 2016",
+      "type": "part-time",
       "responsibilities": [
         "Sat in an Introduction to Java class, helping students master the basics of Java and teaching the course when the teacher is absent",
         "Graded students' projects, tests, and homeworks",
@@ -93,6 +96,7 @@
       "company": "Credit Suisse",
       "startDate": "Jun 2016",
       "endDate": "Aug 2016",
+      "type": "internship",
       "responsibilities": [
         "Updated and solidified Credit Suisse's custom Java library for simplified, Excel-based mobile testing using Appium and Perfecto",
         "Developed a website using a MEAN stack that created, removed, and turned on/off Selenium Grid hubs and nodes remotely onto virtual machines",
@@ -117,6 +121,7 @@
       "company": "PointSource, LLC",
       "startDate": "Jun 2015",
       "endDate": "Dec 2015",
+      "type": "internship",
       "responsibilities": [
         "Learned about writing mobile applications and how to develop a useful, working mobile app in a restricted amount of time",
         "Worked with team to develop an internal app on a MEAN stack through Cordova to check in & out testing devices via a QR code",
@@ -139,6 +144,7 @@
       "company": "Bandwidth.com",
       "startDate": "Jun 2014",
       "endDate": "Jan 2015",
+      "type": "internship",
       "responsibilities": [
         "Learned about the software engineering environment and how to develop projects in Agile",
         "Wrote, cleaned, and upgraded software APIs using RAML as a medium",

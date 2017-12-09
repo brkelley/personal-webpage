@@ -3,4 +3,5 @@ export class Experience {
   startDate: string;
   endDate: string;
   responsibilities: string[];
+  image: string;
 }

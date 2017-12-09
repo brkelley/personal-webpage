@@ -1,0 +1,28 @@
+@import '../../../styles.scss';
+
+.professional-experience-wrapper {
+  font-family: 'PT Serif', serif;
+
+  .title-image {
+    height: 75px;
+    width: auto;
+  }
+
+  .title {
+    text-align: center;
+
+    .title-text {
+      font-size: 125%;
+      font-weight: bold;
+    }
+
+    .company-text {
+      font-size: 110%;
+      font-style: italic;
+    }
+  }
+
+  .responsibilities-wrapper {
+
+  }
+}

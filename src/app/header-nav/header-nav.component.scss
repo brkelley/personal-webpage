@@ -1,8 +1,8 @@
 @import "../../styles";
 
 .header-container {
-  background-color: $nature-green;
-  color: $nature-light-blue;
+  background-color: $website-main-dark;
+  color: $website-white;
   height: 15vh;
 
   .display-name {
@@ -21,16 +21,16 @@
     .tab {
       flex: 0 1 auto;
       text-align: center;
-      color: $nature-light-blue;
+      color: $website-main-light;
 
       .active-tab {
-        color: $nature-white;
+        color: $website-white;
       }
     }
 
     .tab:hover {
       cursor: pointer;
-      color: $nature-white;
+      color: $website-white;
       text-decoration: underline;
     }
   }

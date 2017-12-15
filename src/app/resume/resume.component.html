@@ -1,8 +1,45 @@
 <div class="resume-wrapper" *ngIf="resume">
+
+  <!-- FULL TIME -->
   <div class="full-time experience-container">
     <div class="experience-label">
-      FULL-TIME
+      FULL - TIME
+      <hr class="experience-label-bar" />
     </div>
-    <div class="experience-list-wrapper"></div>
+    <div class="experience-list-wrapper">
+      <ng-container *ngFor="let exp of filterResumeByType('full-time')">
+        <professional-experience [experienceData]="exp"></professional-experience>
+      </ng-container>
+    </div>
+  </div>
+
+  <hr class="experience-container-separator" />
+
+  <!-- PART TIME -->
+  <div class="part-time experience-container">
+    <div class="experience-label">
+      PART - TIME
+      <hr class="experience-label-bar" />
+    </div>
+    <div class="experience-list-wrapper">
+      <ng-container *ngFor="let exp of filterResumeByType('part-time')">
+        <professional-experience [experienceData]="exp"></professional-experience>
+      </ng-container>
+    </div>
+  </div>
+
+  <hr class="experience-container-separator" />
+
+  <!-- internship -->
+  <div class="internship experience-container">
+    <div class="experience-label">
+      PART - TIME
+      <hr class="experience-label-bar" />
+    </div>
+    <div class="experience-list-wrapper">
+      <ng-container *ngFor="let exp of filterResumeByType('internship')">
+        <professional-experience [experienceData]="exp"></professional-experience>
+      </ng-container>
+    </div>
   </div>
 </div>

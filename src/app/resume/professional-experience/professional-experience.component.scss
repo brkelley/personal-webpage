@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 .professional-experience-wrapper {
-  font-family: 'PT Serif', serif;
+  margin: 25px;
 
   .title-image {
     height: 75px;
@@ -9,16 +9,34 @@
   }
 
   .title {
-    text-align: center;
+    cursor: pointer;
+    border: solid 1px $website-main-dark;
+    border-radius: 15px;
+    color: $website-main-dark;
+    padding: 20px;
+
+    @include animation-browsers;
+    transition: .5s;
+
+    &:hover {
+      background-color: lighten( $website-main-light, 10% );
+
+      @include animation-browsers;
+      transition: .5s;
+    }
 
     .title-text {
       font-size: 125%;
       font-weight: bold;
     }
 
+    .title-date {
+      font-style: italic;
+      font-size: 90%;
+    }
+
     .company-text {
       font-size: 110%;
-      font-style: italic;
     }
   }
 

@@ -15,6 +15,13 @@ $nature-blue: #5085A5;
 $nature-light-blue: #8FC1E3;
 $nature-white: #F7F9Fb;
 
+@mixin animation-browsers {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;

@@ -10,6 +10,8 @@ export class ProfessionalExperienceComponent implements OnInit {
 
   @Input() experienceData: ProfessionalExperience;
 
+  openDetails: boolean;
+
   constructor() { }
 
   ngOnInit() {

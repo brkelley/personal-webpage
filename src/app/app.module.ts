@@ -38,7 +38,6 @@ const appRoutes: Routes = [
     AboutmeComponent
   ],
   imports: [
-
     RouterModule.forRoot(appRoutes),
     BrowserModule,
     BrowserAnimationsModule,

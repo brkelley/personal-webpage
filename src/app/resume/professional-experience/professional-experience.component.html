@@ -1,17 +1,22 @@
 <div class="professional-experience-wrapper">
   <div class="title" (click)="openDetails = !openDetails">
-    <div class="title-text">
-      {{experienceData.title}}
+    <div class="title-text-wrapper">
+      <div class="title-text">
+        {{experienceData.title}}
+      </div>
+      <div class="title-date">
+        {{experienceData.startDate}} - {{experienceData.endDate}}
+      </div>
+      <br />
+      <div class="company-text">
+        {{experienceData.company}}
+      </div>
     </div>
-    <div class="title-date">
-      {{experienceData.startDate}} - {{experienceData.endDate}}
-    </div>
-    <br />
-    <div class="company-text">
-      {{experienceData.company}}
+    <div class="title-image-wrapper">
+      <img class="title-image" [src]="experienceData.image" />
     </div>
   </div>
-  <div class="advanced-details" *ngIf="openDetails">
+  <div class="advanced-details" *ngIf="openDetails" [@experienceDetails]>
     <div class="responsibilities-wrapper">
       <ul>
         <li *ngFor="let responsibility of experienceData.responsibilities">{{responsibility}}</li>

@@ -1,6 +1,7 @@
 @import '../../../styles.scss';
 
 .professional-experience-wrapper {
+  overflow: hidden;
   margin: 25px;
 
   .title-image {
@@ -16,6 +17,7 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    z-index: 50;
 
     @include animation-browsers;
     transition: .5s;
@@ -57,7 +59,39 @@
     }
   }
 
-  .responsibilities-wrapper {
+  .advanced-details {
+    display: flex;
 
+    .responsibilities-wrapper {
+      flex: 1 0 85%;
+
+      .responsibility-title {
+        color: $website-main-medium;
+        font-size: 135%;
+        margin: 10px;
+        font-weight: bold;
+      }
+
+      .responsibilities {
+        color: $website-main-dark;
+        margin: 10px 0 10px 0;
+        word-wrap: break-word;
+      }
+    }
+    .technologies-wrapper {
+      flex: 1 0 15%;
+
+      .technology-title {
+        color: $website-main-medium;
+        font-size: 135%;
+        margin: 10px;
+        font-weight: bold;
+      }
+
+      .technologies {
+        color: $website-main-dark;
+        margin: 10px 0 10px 0;
+      }
+    }
   }
 }

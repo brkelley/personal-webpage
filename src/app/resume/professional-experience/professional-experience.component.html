@@ -16,16 +16,22 @@
       <img class="title-image" [src]="experienceData.image" />
     </div>
   </div>
-  <div class="advanced-details" *ngIf="openDetails" [@experienceDetails]>
+  <div class="advanced-details" *ngIf="openDetails">
     <div class="responsibilities-wrapper">
-      <ul>
-        <li *ngFor="let responsibility of experienceData.responsibilities">{{responsibility}}</li>
-      </ul>
+      <div class="responsibility-title">
+        Responsibilities
+      </div>
+      <div class="responsibilities" *ngFor="let responsibility of experienceData.responsibilities">
+        {{responsibility}}
+      </div>
     </div>
-    <div class="technologies-wrapper">
-      <ul>
-        <li *ngFor="let tech of experienceData.technologies">{{tech}}</li>
-      </ul>
+    <div class="technologies-wrapper" *ngIf="experienceData.technologies && experienceData.technologies.length > 0">
+      <div class="technology-title">
+        Tech
+      </div>
+      <div class="technologies" *ngFor="let tech of experienceData.technologies">
+        {{tech}}
+      </div>
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Resume } from '../models/resume/resume.model';
-import { ResumeDataApiService } from '../data-api/resume-data-api/resume-data-api.service';
+import { ResumeDataApiService } from '../data-api/resume/resume-data-api.service';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()

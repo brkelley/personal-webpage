@@ -1,0 +1,23 @@
+{
+  "biography": "My name is Brendan Kelley. I was born in Riverside, California, then moved to Raleigh, North Carolina when I was 2. I have lived in Raleigh ever since. I went to high school in Enloe High School. I graduated NC State in the Computer Science department in 2012. Since 6th grade, I have constantly been playing music. I started out on trumpet, then moved to baritone, french horn, trombone, and tuba until I finally settled on percussion. I played in the Enloe High School marching band, then in the NC State Drumline, where I played 6th bass, 9th bass, and 8th bass. I play drumset at my church, and guitar and piano in my spare time.",
+  "originStory": "I started college intending to major in a chemistry field. However, after struggling through Chemical Engineering, Paper Science & Engineering, and Geology, I realized that Chemistry just isn't the field for me. My sister graduated NC State with a Computer Science degree and she recommended that I try a Computer Science class. I was hesitant at first (living in sibling's shadow is difficult), but I eventually cracked and took Introduction to Computer Science. I fell in love immediately. I found out what specialty I wanted when I had my PointSource internship. I loved coding in AngularJS and I knew then that I wanted to do front-end development.",
+  "hobbies": [
+    "backpacking",
+    "drumming",
+    "weightlifting",
+    "playing guitar and piano",
+    "writing & listening to music",
+    "reading",
+    "web design",
+    "video games"
+  ],
+  "photos": [
+    "drumline.png",
+    "formal-suit.png",
+    "paisley.png",
+    "pregame-pic.png",
+    "pregame-pic-2.png",
+    "sister-fair-1.png",
+    "sister-fair-2.png"
+  ]
+}

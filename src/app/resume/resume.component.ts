@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ResumeDataApiService } from '../data-api/resume-data-api/resume-data-api.service';
 import { Resume } from '../models/resume/resume.model';
-import {Experience} from "../models/resume/experience.model";
+import { Experience } from '../models/resume/experience.model';
+import { ResumeService } from './resume.service';
+import { ProfessionalExperience } from '../models/resume/professional-experience.model';
 
 @Component({
   selector: 'app-resume',
@@ -12,20 +13,20 @@ export class ResumeComponent implements OnInit {
 
   resume: Resume;
 
-  constructor(private resumeDataApi: ResumeDataApiService) { }
+  constructor(private resumeService: ResumeService) { }
 
   ngOnInit() {
     this.getResume();
   }
 
   filterResumeByType(type: string): Experience[] {
-    return this.resume.professionalExperience.filter(el => {
+    return this.resume.professionalExperience.filter((el: ProfessionalExperience) => {
       return el.type === type;
     });
   }
 
   getResume() {
-    this.resumeDataApi.getResume().subscribe(data => {
+    this.resumeService.getResume().subscribe((data: Resume) => {
       this.resume = data;
     });
   }

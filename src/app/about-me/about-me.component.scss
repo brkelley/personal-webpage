@@ -1,0 +1,13 @@
+@import '../../styles';
+
+.about-me-wrapper {
+  width: 100%;
+  background-color: $website-white;
+
+  .bio-wrapper {
+    text-align: center;
+    font-size: 110%;
+    line-height: 2em;
+    padding: 25px 10% 25px 10%;
+  }
+}

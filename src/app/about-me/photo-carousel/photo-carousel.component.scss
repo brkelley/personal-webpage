@@ -1,0 +1,18 @@
+.photo-carousel-wrapper {
+  width: 100%;
+  display: flex;
+
+  .photo-progress-indicator {
+    color: white;
+    font-size: 200%;
+    align-self: center;
+    z-index: 99;
+
+    &.prev-photo {
+    }
+  }
+
+  .photo-wrapper {
+
+  }
+}

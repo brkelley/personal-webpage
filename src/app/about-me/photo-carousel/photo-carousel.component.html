@@ -1,0 +1,11 @@
+<div class="photo-carousel-wrapper" *ngIf="photos">
+  <div class="photo-progress-indicator prev-photo">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+  </div>
+  <div class="photo-wrapper">
+    <img [src]="currentPhoto" />
+  </div>
+  <div class="photo-progress-indicator next-photo">
+    <i class="glyphicon glyphicon-chevron-right"></i>
+  </div>
+</div>

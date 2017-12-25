@@ -17,7 +17,13 @@ export class AboutMeComponent implements OnInit {
     this.aboutMeService.getAutobiography()
       .subscribe((data: Autobiography) => {
         this.autobiography = data;
-      })
+        this.remapPhotos();
+      });
   }
 
+  remapPhotos() {
+    for (let i = 0; i < this.autobiography.photos.length; i++) {
+      this.autobiography.photos[i] = 'assets/about-me-photos/' + this.autobiography.photos[i];
+    }
+  }
 }

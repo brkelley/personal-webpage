@@ -64,6 +64,7 @@
 
     .responsibilities-wrapper {
       flex: 1 0 85%;
+      margin: 10px;
 
       .responsibility-title {
         color: $website-main-medium;
@@ -78,8 +79,10 @@
         word-wrap: break-word;
       }
     }
+
     .technologies-wrapper {
       flex: 1 0 15%;
+      margin: 10px;
 
       .technology-title {
         color: $website-main-medium;

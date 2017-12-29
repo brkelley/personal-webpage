@@ -1,11 +1,11 @@
 <div class="photo-carousel-wrapper" *ngIf="photos">
-  <div class="photo-progress-indicator prev-photo">
+  <button class="photo-progress-indicator prev-photo" (click)="progressCarousel(false, true)">
     <i class="glyphicon glyphicon-chevron-left"></i>
-  </div>
+  </button>
   <div class="photo-wrapper">
-    <img [src]="currentPhoto" />
+    <img [src]="currentPhoto" width="400px" />
   </div>
-  <div class="photo-progress-indicator next-photo">
+  <button class="photo-progress-indicator next-photo" (click)="progressCarousel(true, true)">
     <i class="glyphicon glyphicon-chevron-right"></i>
-  </div>
+  </button>
 </div>

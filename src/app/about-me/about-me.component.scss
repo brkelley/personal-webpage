@@ -4,12 +4,67 @@
   width: 100%;
   background-color: $website-white;
 
+  .photo-carousel-wrapper {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
   .biography-wrapper {
     .biography-text {
-      text-align: center;
       font-size: 110%;
       line-height: 2em;
       padding: 25px 10% 25px 10%;
+    }
+  }
+
+  .origin-story-wrapper {
+
+    .origin-title {
+      color: $website-main-dark;
+      font-size: 3rem;
+      font-weight: bold;
+      padding-left: 50px;
+    }
+
+    .origin-story-body {
+      display: flex;
+
+      .origin-story-text {
+        font-size: 110%;
+        line-height: 2em;
+        padding: 25px 0 25px 10%;
+        flex: 1 0 80%;
+      }
+
+      .origin-story-pic {
+        flex: 0 1 15%;
+      }
+    }
+  }
+
+  .hobbies-wrapper {
+    .hobbies-title {
+      color: $website-main-dark;
+      font-size: 3rem;
+      font-weight: bold;
+      padding-left: 50px;
+    }
+
+    .hobbies-wordcloud {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 20px;
+
+      .hobby {
+        border-radius: 15px;
+        margin: 10px 30px;
+        padding: 15px;
+        background-color: $website-main-light;
+        color: $website-main-dark;
+        font-size: 115%;
+      }
     }
   }
 }

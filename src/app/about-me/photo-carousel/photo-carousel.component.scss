@@ -1,18 +1,30 @@
+@import '../../../styles';
+
 .photo-carousel-wrapper {
-  width: 100%;
   display: flex;
+  background-color: $website-white;
 
   .photo-progress-indicator {
     color: white;
+    background-color: transparent;
+    border: none;
     font-size: 200%;
     align-self: center;
     z-index: 99;
+    margin: 5px;
 
-    &.prev-photo {
+    .glyphicon {
+      color: $website-accent;
+      cursor: pointer;
+
+      &:hover {
+        color: darken( $website-accent, 7% );
+      }
     }
   }
 
   .photo-wrapper {
-
+    width: 100%;
+    height: auto;
   }
 }

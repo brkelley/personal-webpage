@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'project-navbar',
@@ -7,15 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectNavbarComponent implements OnInit {
 
-  projects: string[] = ['Personal Webpage'];
-  activeTab: string = 'Personal Webpage';
+  @Input() projects: string[];
+  @Output() chosenProject: EventEmitter<string> = new EventEmitter();
+
+  activeTabIdx = 0;
 
   constructor() { }
 
   ngOnInit() {
+    this.goTo(0);
   }
 
-  goTo(chosenTab: string) {
-    this.activeTab = chosenTab;
+  goTo(chosenTab: number) {
+    this.activeTabIdx = chosenTab;
+    this.chosenProject.emit(this.projects[this.activeTabIdx]);
   }
 }

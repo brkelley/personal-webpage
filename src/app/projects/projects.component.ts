@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BandBotService } from '../concert-spotifyer/band-bot.service';
+import { ProjectsService } from './projects.service';
+import { Project } from '../models/project.model';
 
 @Component({
   selector: 'app-projects',
@@ -8,10 +10,22 @@ import { BandBotService } from '../concert-spotifyer/band-bot.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor(private bandBotService: BandBotService) { }
+  projects: Project[];
+  activeProject: Project;
 
-  ngOnInit() {
-    this.bandBotService.createBandBotSpotify();
+  get projectList(): string[] {
+    return this.projects.map(el => el.project);
   }
 
+  constructor(private projectsService: ProjectsService) { }
+
+  ngOnInit() {
+    this.projectsService.getProjectInfo().subscribe((data: Project[]) => {
+      this.projects = data;
+    });
+  }
+
+  onChosenProject(project: string) {
+    this.activeProject = this.projects.find(el => el.project === project);
+  }
 }

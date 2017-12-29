@@ -3,8 +3,8 @@
     <div class="project-tab-container" *ngFor="let project of projects; let idx = index">
       <hr class="tab-separator" *ngIf="idx !== 0" />
       <div class="project-tab"
-           (click)="goTo(project)"
-           [ngClass]="{ 'active-tab': (project === activeTab) }"
+           (click)="goTo(idx)"
+           [ngClass]="{ 'active-tab': (idx === activeTabIdx) }"
       >
         {{project}}
       </div>

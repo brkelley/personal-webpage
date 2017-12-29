@@ -3,4 +3,63 @@
 .projects-container {
   height: 100%;
   background-color: $website-white;
+  display: flex;
+
+  .project-navbar-container {
+    flex: 1 0 20vw;
+  }
+
+  .project-info-container {
+    flex: 1 0 80vw;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.8rem;
+    flex-wrap: wrap;
+
+    .project-snippet-wrapper {
+      color: $website-main-medium;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .link-wrapper {
+      a {
+        color: $website-main-dark !important;
+
+        &:hover {
+          color: darken( $website-main-dark, 10% ) !important;
+        }
+      }
+    }
+
+    .project-sub-info-wrapper {
+      margin-top: 20px;
+      font-size: 1.6rem;
+      display: flex;
+
+      .project-description-wrapper {
+        width: 75%;
+        overflow-wrap: normal;
+        text-align: left;
+        margin-right: 15px;
+        align-self: center;
+      }
+
+      .project-technologies-wrapper {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+
+        .tech-title {
+          font-size: 1.7rem;
+          font-weight: bold;
+          color: $website-main-dark;
+
+          &.secondary-title {
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
 }

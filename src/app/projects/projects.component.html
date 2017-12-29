@@ -1,3 +1,26 @@
-<div class="projects-container">
-  <project-navbar></project-navbar>
+<div class="projects-container" *ngIf="projects">
+  <div class="project-navbar-container">
+    <project-navbar [projects]="projectList" (chosenProject)="onChosenProject($event)"></project-navbar>
+  </div>
+  <div class="project-info-container">
+    <div class="project-snippet-wrapper">
+      {{activeProject.snippet}}
+    </div>
+    <div class="link-wrapper">
+      <a href="{{activeProject.link}}">View project in GitHub</a>
+    </div>
+    <div class="project-sub-info-wrapper">
+      <div class="project-description-wrapper">
+        {{activeProject.description}}
+      </div>
+      <div class="project-technologies-wrapper">
+        <span class="tech-title">Language:</span>
+        {{activeProject.language}}
+        <span class="tech-title secondary-title">Other Technologies:</span>
+        <div *ngFor="let tech of activeProject.technologies">
+          {{tech}}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

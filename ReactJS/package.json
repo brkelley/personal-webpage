@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "https://github.com/brkelley/PersonalWebpage",
   "author": "Brendan Kelley",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
 }

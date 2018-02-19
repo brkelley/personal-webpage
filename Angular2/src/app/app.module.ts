@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -33,7 +32,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderNavComponent,
     HomepageComponent
   ],
   imports: [

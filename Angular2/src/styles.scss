@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:700');
+@import url('https://fonts.googleapis.com/css?family=Signika');
 
-$pws-summer-sky: #286DA8;
-$pws-warm-peach: #CD5360;
-$pws-field: #837D4E;
-$pws-breeze: #438496;
+$pws-navy-blue: #0F1626;
+$pws-leather: #AB987A;
+$pws-coral: #FF533D;
+$pws-eggshell: #F5F5F5;
 
 $website-main-light: #D4A59A;
 $website-main-medium: #BC4639;
@@ -20,7 +20,7 @@ $website-white: #F3E0DC;
 }
 
 body {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Signika', serif;
   margin: 0;
   height: 100vh;
 }

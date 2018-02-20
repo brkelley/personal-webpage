@@ -1,0 +1,62 @@
+@import '../../../styles';
+
+.homepage-navbar-wrapper {
+  margin-top: 12%;
+  margin-left: 12%;
+
+  .homepage-title-wrapper {
+    background-color: $pws-navy-blue;
+    width: 650px;
+    padding: 15px 30px;
+    display: flex;
+
+    .homepage-title {
+      font-size: 6rem;
+      color: $pws-eggshell;
+      margin-right: 60px;
+    }
+
+    .social-media-items-wrapper {
+      align-self: center;
+      display: flex;
+
+      .social-media-item {
+        font-size: 2.5rem;
+
+        .social-media-link {
+          margin: 10px;
+        }
+      }
+    }
+  }
+  .nav-items-wrapper {
+    margin-left: 25px;
+
+    .nav-item-wrapper {
+      background-color: $pws-navy-blue;
+      color: $pws-eggshell;
+      font-size: 2.5rem;
+      margin: 25px;
+      padding: 10px;
+      width: 250px;
+
+      border-radius:3px;
+      -webkit-transform: skewX(-10deg);
+         -moz-transform: skewX(-10deg);
+           -o-transform: skewX(-10deg);
+              transform: skewX(-10deg);
+
+      &:hover {
+        background-color: lighten($pws-navy-blue, 8%);
+        cursor: pointer;
+      }
+
+      .diagonal-span {
+        -webkit-transform: skewX(10deg);
+           -moz-transform: skewX(10deg);
+             -o-transform: skewX(10deg);
+                transform: skewX(10deg);
+      }
+    }
+  }
+}

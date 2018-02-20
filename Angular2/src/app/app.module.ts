@@ -8,13 +8,13 @@ import { ResumeComponent } from './resume/resume.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsModule } from './projects/projects.module';
 import { ProjectsComponent } from './projects/projects.component';
-import { ConcertSpotifyerModule } from './concert-spotifyer/concert-spotifyer.module';
 import { ResumeModule } from './resume/resume.module';
 import { DataApiModule } from './data-api/data-api.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { AboutMeModule } from './about-me/about-me.module';
+import {HomepageModule} from './homepage/homepage.module';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomepageComponent },
@@ -30,10 +30,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
@@ -43,10 +40,10 @@ const appRoutes: Routes = [
     }),
     HttpClientModule,
     FormsModule,
+    HomepageModule,
     ProjectsModule,
     ResumeModule,
     AboutMeModule,
-    ConcertSpotifyerModule,
     DataApiModule
   ],
   providers: [],

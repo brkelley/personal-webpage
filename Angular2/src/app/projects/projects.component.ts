@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BandBotService } from '../concert-spotifyer/band-bot.service';
 import { ProjectsService } from './projects.service';
 import { Project } from '../models/project.model';
 

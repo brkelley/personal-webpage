@@ -14,15 +14,15 @@ export class HomepageComponent {
     this.navItems = [
       {
         displayName: 'About Me',
-        route: 'about-me'
+        route: '/about-me'
       },
       {
         displayName: 'Resume',
-        route: 'resume'
+        route: '/resume'
       },
       {
         displayName: 'Projects',
-        route: 'projects'
+        route: '/projects'
       }
     ];
     this.socialMediaItems = [

@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="nav-items-wrapper">
-    <div class="nav-item-wrapper" *ngFor="let navItem of navItems">
+    <div class="nav-item-wrapper" *ngFor="let navItem of navItems" [routerLink]="[navItem.route]">
       <span class="diagonal-span">{{navItem.displayName}}</span>
     </div>
   </div>

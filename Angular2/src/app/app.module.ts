@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { AboutMeModule } from './about-me/about-me.module';
 import {HomepageModule} from './homepage/homepage.module';
+import { SharedModule } from './shared/shared.module';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomepageComponent },
@@ -40,11 +41,13 @@ const appRoutes: Routes = [
     }),
     HttpClientModule,
     FormsModule,
+
+    DataApiModule,
     HomepageModule,
     ProjectsModule,
     ResumeModule,
     AboutMeModule,
-    DataApiModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

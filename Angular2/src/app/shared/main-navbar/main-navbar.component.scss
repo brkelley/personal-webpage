@@ -1,0 +1,33 @@
+@import '../../../styles';
+
+.main-navbar-wrapper {
+  width: 100%;
+  display: flex;
+  font-size: 2.2rem;
+  background-color: $pws-navy-blue;
+  padding: 10px;
+  color: $pws-eggshell;
+
+  .navbar-name {
+    flex: 1 0 40%;
+    font-size: 2.5rem;
+  }
+
+  .navbar-items-wrapper {
+    flex: 1 0 60%;
+    display: flex;
+
+    .navbar-item {
+      margin: 0 50px;
+
+      &:hover {
+        color: darken($pws-eggshell, 10%);
+        cursor: pointer;
+      }
+
+      .chosen-navbar-item {
+        color: $pws-leather;
+      }
+    }
+  }
+}

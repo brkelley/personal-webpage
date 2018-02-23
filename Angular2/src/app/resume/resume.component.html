@@ -1,3 +1,5 @@
-<p>
-  resume works!
-</p>
+<div class="resume-wrapper" *ngIf="resume">
+  <div class="resume-jumbotron-wrapper">
+    <resume-jumbotron [contactInformation]="resume.contactInformation"></resume-jumbotron>
+  </div>
+</div>

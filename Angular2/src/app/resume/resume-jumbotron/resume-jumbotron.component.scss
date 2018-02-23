@@ -1,0 +1,38 @@
+@import '../../../styles';
+
+.resume-jumbotron-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+
+  .jumbotron-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 8px $pws-coral;
+    z-index: 10;
+  }
+  .jumbotron-info-wrapper {
+    width: 35%;
+    align-self: center;
+    z-index: 5;
+
+    .jumbotron-name {
+      background-color: $pws-coral;
+      color: $pws-navy-blue;
+      font-size: 5rem;
+      padding: 5px 15px 5px 65px;
+      margin-left: -25px;
+    }
+    .jumbotron-contact-info {
+      font-size: 2rem;
+      display: flex;
+      margin-top: 5px;
+
+      .jumbotron-contact {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

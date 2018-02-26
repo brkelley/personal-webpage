@@ -11,6 +11,7 @@ import { ResumeService } from '../core/services/resume/resume.service';
 export class ResumeComponent implements OnInit {
 
   resume: Resume;
+  resumeLocation = 'assets/Resume.pdf';
 
   constructor(private resumeService: ResumeService) { }
 

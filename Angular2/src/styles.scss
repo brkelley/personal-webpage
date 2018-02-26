@@ -24,3 +24,20 @@ body {
   margin: 0;
   height: 100vh;
 }
+
+.pws-button {
+  text-decoration: none;
+  color: $pws-eggshell;
+  background-color: $pws-coral;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  font-size: 1.8rem;
+  box-shadow: 0 3px grey;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($pws-coral, 10%);
+  }
+}

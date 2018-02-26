@@ -1,15 +1,22 @@
 <div class="resume-jumbotron-wrapper" *ngIf="pageLoaded()">
-  <img class="jumbotron-pic" [src]="photoLocation" />
-  <div class="jumbotron-info-wrapper">
-    <div class="jumbotron-name">
-      Brendan Kelley
-    </div>
-    <div class="jumbotron-contact-info">
-      <div class="jumbotron-contact">
-        {{contactInformation.phoneNumber | phoneNumber}}
+  <div class="jumbotron-side-info-wrapper left-side">
+    <div class="jumbotron-side-info">
+      <div class="jumbotron-side-info-content primary-info">
+        Brendan Kelley
       </div>
-      <div class="jumbotron-contact">
+      <div class="jumbotron-side-info-content">
+        Front-end Engineer
+      </div>
+    </div>
+  </div>
+  <img class="jumbotron-pic" [src]="photoLocation" />
+  <div class="jumbotron-side-info-wrapper right-side">
+    <div class="jumbotron-side-info">
+      <div class="jumbotron-side-info-content">
         {{contactInformation.email}}
+      </div>
+      <div class="jumbotron-side-info-content">
+        {{contactInformation.phoneNumber | phoneNumber}}
       </div>
     </div>
   </div>

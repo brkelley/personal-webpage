@@ -5,34 +5,45 @@
   justify-content: center;
   padding: 2%;
 
-  .jumbotron-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: solid 8px $pws-coral;
-    z-index: 10;
-  }
-  .jumbotron-info-wrapper {
+  .jumbotron-side-info-wrapper {
     width: 35%;
+    height: 150px;
     align-self: center;
+    text-align: center;
     z-index: 5;
+    background-color: $pws-navy-blue;
+    color: $pws-coral;
+    font-size: 2.5rem;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
 
-    .jumbotron-name {
-      background-color: $pws-coral;
-      color: $pws-navy-blue;
-      font-size: 5rem;
-      padding: 5px 15px 5px 65px;
-      margin-left: -25px;
+    &.left-side {
+      margin-right: -15px;
     }
-    .jumbotron-contact-info {
-      font-size: 2rem;
-      display: flex;
-      margin-top: 5px;
+    &.right-side {
+      margin-left: -15px;
+    }
 
-      .jumbotron-contact {
-        margin-left: 20px;
-        margin-right: 20px;
+    .jumbotron-side-info {
+      align-self: center;
+
+      .jumbotron-side-info-content {
+        justify-content: center;
+        align-self: center;
+
+        &.primary-info {
+          font-size: 4rem;
+        }
       }
     }
+  }
+
+  .jumbotron-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: solid 8px $pws-eggshell;
+    z-index: 10;
   }
 }

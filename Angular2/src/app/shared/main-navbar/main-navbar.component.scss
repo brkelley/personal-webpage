@@ -8,9 +8,18 @@
   padding: 10px;
   color: $pws-eggshell;
 
-  .navbar-name {
+  .navbar-name-wrapper {
     flex: 1 0 40%;
-    font-size: 2.5rem;
+
+    .navbar-name {
+      font-size: 2.7rem;
+      color: darken($pws-eggshell, 10%);
+      cursor: pointer;
+
+      .first-name {
+        color: $pws-coral;
+      }
+    }
   }
 
   .navbar-items-wrapper {

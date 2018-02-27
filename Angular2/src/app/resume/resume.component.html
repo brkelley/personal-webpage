@@ -2,13 +2,12 @@
   <div class="resume-jumbotron-wrapper">
     <resume-jumbotron [contactInformation]="resume.contactInformation"></resume-jumbotron>
   </div>
-  <div class="resume-options">
-    <button class="pws-button">
-      View
-
-    </button>
-    <a  href="{{resumeLocation}}" download>
-      <button class="pws-button">Download</button>
-    </a>
+  <!--<div class="resume-options">-->
+    <!--<a href="{{resumeLocation}}" download>-->
+      <!--<button class="pws-button">Download PDF</button>-->
+    <!--</a>-->
+  <!--</div>-->
+  <div class="experience-wrapper">
+    <experience-container [experienceCategories]="resumeCategories" [experiences]="resumeObjects"></experience-container>
   </div>
 </div>

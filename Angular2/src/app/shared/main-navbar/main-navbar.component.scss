@@ -3,13 +3,14 @@
 .main-navbar-wrapper {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   font-size: 2.2rem;
   background-color: $pws-navy-blue;
   padding: 10px;
   color: $pws-eggshell;
 
   .navbar-name-wrapper {
-    flex: 1 0 40%;
+    flex: 1 0 auto;
 
     .navbar-name {
       font-size: 2.7rem;
@@ -23,8 +24,9 @@
   }
 
   .navbar-items-wrapper {
-    flex: 1 0 60%;
+    flex: 1 0 auto;
     display: flex;
+    justify-content: flex-end;
 
     .navbar-item {
       margin: 0 50px;

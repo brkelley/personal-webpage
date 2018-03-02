@@ -1,9 +1,31 @@
+@import '../../../../styles';
+
 .experience-navbar-wrapper {
   display: flex;
   justify-content: space-around;
+  background-color: $pws-leather;
+  padding: 0 25px;
 
   .experience-section {
+    flex: 1 0 auto;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    padding: 10px;
+    margin: 0 2px;
+    background-color: $pws-navy-blue;
+    color: $pws-coral;
+    border-radius: 15px 15px 0 0;
+
+    &:hover {
+      color: darken($pws-coral, 10%);
+      background-color: darken($pws-navy-blue, 10%);
+      cursor: pointer;
+    }
+
+    &.active-tab {
+      background-color: $pws-eggshell;
+      color: $pws-navy-blue;
+      font-weight: bold;
+    }
   }
 }

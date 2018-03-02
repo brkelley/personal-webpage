@@ -9,9 +9,16 @@ export class ExperienceNavbarComponent implements OnInit {
 
   @Input() experienceCategories: string[];
 
-  constructor() { }
+  activeTab: string;
+
+  constructor() {
+    this.activeTab = 'full-time';
+  }
 
   ngOnInit() {
   }
 
+  selectExperience(category: string) {
+    this.activeTab = category;
+  }
 }

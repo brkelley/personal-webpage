@@ -37,7 +37,7 @@ export class ResumeComponent implements OnInit {
       .filter((value, index, self) => {
       return self.indexOf(value) === index;
     });
-    cats.push(...['other', 'education']);
+    cats.push(...['education', 'other']);
     return cats;
   }
 

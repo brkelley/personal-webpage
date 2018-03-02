@@ -1,5 +1,11 @@
 <div class="experience-navbar-wrapper">
-  <div class="experience-section" *ngFor="let category of experienceCategories">
+  <div class="experience-section"
+       [ngClass]="{'active-tab': category === activeTab}"
+       *ngFor="let category of experienceCategories"
+       (click)="selectExperience(category)">
     {{category | capitalize}}
   </div>
+</div>
+<div class="experience">
+  <experience-details></experience-details>
 </div>

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   padding: 2%;
+  background-color: $pws-leather;
 
   .jumbotron-side-info-wrapper {
     width: 35%;
@@ -43,7 +44,7 @@
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    border: solid 8px $pws-eggshell;
+    border: solid 8px $pws-leather;
     z-index: 10;
   }
 }

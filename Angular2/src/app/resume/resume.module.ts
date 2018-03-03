@@ -5,7 +5,7 @@ import { ResumeJumbotronComponent } from './resume-jumbotron/resume-jumbotron.co
 import { CoreModule } from '../core/core.module';
 import { ExperienceContainerComponent } from './experience-container/experience-container.component';
 import { ExperienceNavbarComponent } from './experience-container/experience-navbar/experience-navbar.component';
-import { ExperienceDetailsComponent } from './experience-container/experience-details/experience-details.component';
+import { ExperienceDetailsComponent } from './experience-container/experience-detail/experience-detail.component';
 
 @NgModule({
   imports: [

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'experience-navbar',
@@ -8,17 +8,19 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ExperienceNavbarComponent implements OnInit {
 
   @Input() experienceCategories: string[];
+  @Output() chosenTab: EventEmitter<string> = new EventEmitter();
 
   activeTab: string;
 
-  constructor() {
-    this.activeTab = 'full-time';
-  }
+  constructor() { }
 
   ngOnInit() {
+    this.activeTab = 'full-time';
+    this.chosenTab.emit('full-time');
   }
 
   selectExperience(category: string) {
     this.activeTab = category;
+    this.chosenTab.emit(this.activeTab);
   }
 }

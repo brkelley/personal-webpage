@@ -38,6 +38,7 @@ npm manifest:
       "@angular/router": "^5.0.4",
       "bootstrap": "^3.3.7",
       "core-js": "^2.5.1",
+      "font-awesome": "^4.7.0",
       "ngx-bootstrap": "^2.0.0-rc.0",
       "ngx-toastr": "^7.0.2",
       "rxjs": "^5.5.2",
@@ -6515,5 +6516,5 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.18.tgz#8cecb3977fcd1b3090562ff4570e2847e752b48d"
 
 Trace: 
-  Error: EACCES: permission denied, mkdir '/Users/bebokelley/Documents/Projects/PersonalWebpage/node_modules/uglifyjs-webpack-plugin/node_modules/source-map'
+  Error: EACCES: permission denied, unlink '/Users/bebokelley/Documents/Projects/PersonalWebpage/Angular2/node_modules/.bin/_ts-node'
       at Error (native)

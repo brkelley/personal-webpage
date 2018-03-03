@@ -1,1 +1,6 @@
-<experience-navbar [experienceCategories]="experienceCategories"></experience-navbar>
+<experience-navbar [experienceCategories]="experienceCategories" (chosenTab)="onTabChosen($event)"></experience-navbar>
+<div class="experience-wrapper">
+  <div class="experience-item" *ngFor="let experience of chosenExperience">
+    <experience-detail [experience]="experience"></experience-detail>
+  </div>
+</div>

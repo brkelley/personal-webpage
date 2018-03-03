@@ -4,8 +4,7 @@
       <hr class="tab-separator" *ngIf="idx !== 0" />
       <div class="project-tab"
            (click)="goTo(idx)"
-           [ngClass]="{ 'active-tab': (idx === activeTabIdx) }"
-      >
+           [ngClass]="{ 'active-tab': (idx === activeTabIdx) }">
         {{project}}
       </div>
     </div>

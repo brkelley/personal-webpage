@@ -13,6 +13,20 @@ export class ExperienceContainerComponent implements OnInit {
   @Input() experiences: Object;
 
   chosenExperience: Experience;
+  chosenExperienceType: string;
+  _switchType: string;
+
+  get switchType(): string {
+    return this._switchType;
+  }
+
+  set switchType(specificType: string) {
+    if (specificType === 'full-time' || specificType === 'part-time' || specificType === 'internship') {
+      this._switchType = 'career-experience';
+    } else {
+      this._switchType = specificType;
+    }
+  }
 
   constructor() { }
 
@@ -20,5 +34,7 @@ export class ExperienceContainerComponent implements OnInit {
 
   onTabChosen(tab: string) {
     this.chosenExperience = this.experiences[tab];
+    this.chosenExperienceType = tab;
+    this.switchType = tab;
   }
 }

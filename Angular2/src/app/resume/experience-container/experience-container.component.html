@@ -1,6 +1,16 @@
 <experience-navbar [experienceCategories]="experienceCategories" (chosenTab)="onTabChosen($event)"></experience-navbar>
 <div class="experience-wrapper">
   <div class="experience-item" *ngFor="let experience of chosenExperience">
-    <experience-detail [experience]="experience"></experience-detail>
+    <ng-container [ngSwitch]="switchType">
+      <ng-container *ngSwitchCase="'career-experience'">
+        <career-experience-detail></career-experience-detail>
+      </ng-container>
+      <ng-container *ngSwitchCase="'education'">
+        <education-experience></education-experience>
+      </ng-container>
+      <ng-container *ngSwitchCase="'other'">
+        <extracurricular-experience></extracurricular-experience>
+      </ng-container>
+    </ng-container>
   </div>
 </div>

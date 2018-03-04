@@ -1,5 +1,5 @@
-export class Education {
+import { Experience } from './experience.model';
+
+export class Education extends Experience {
   school: string;
-  graduationDate: string;
-  highestRank: string;
 }

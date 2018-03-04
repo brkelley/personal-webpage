@@ -23,14 +23,24 @@
   ],
   "education": [
     {
-      "school": "NC State University",
-      "graduationDate": "Dec 2016",
-      "highestRank": "BS in Computer Science"
+      "title": "B.S. in Computer Science",
+      "startDate": "Jun 2012",
+      "endDate": "Dec 2016",
+      "responsibilities": [
+
+      ],
+      "image": "",
+      "school": "NC State University"
     },
     {
-      "school": "William G. Enloe High School",
-      "graduationDate": "Jun 2012",
-      "highestRank": "Diploma"
+      "title": "Diploma",
+      "startDate": "Aug 2009",
+      "endDate": "June 2012",
+      "responsibilities": [
+
+      ],
+      "image": "",
+      "school": "William G. Enloe High School"
     }
   ],
   "professionalExperience": [

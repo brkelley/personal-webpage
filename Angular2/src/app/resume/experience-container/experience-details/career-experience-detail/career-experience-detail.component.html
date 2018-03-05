@@ -1,3 +1,21 @@
-<p>
-  career-experience-detail works!
-</p>
+<div class="career-experience-detail-container">
+  <div class="career-detail-wrapper">
+    <div class="career-time-range">
+      {{experience.startDate}} - {{experience.endDate}}
+    </div>
+    <div class="career-title">
+      {{experience.title}} - <span class="career-title-company">{{experience.company}}</span>
+    </div>
+    <div class="career-responsibilities">
+      <ul>
+        <li class="career-responsibility"
+            *ngFor="let responsibility of experience.responsibilities">
+          {{responsibility}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="career-image-wrapper">
+    <img class="career-image" [src]="experience.image" />
+  </div>
+</div>

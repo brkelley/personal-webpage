@@ -3,7 +3,7 @@
   <div class="experience-item" *ngFor="let experience of chosenExperience">
     <ng-container [ngSwitch]="switchType">
       <ng-container *ngSwitchCase="'career-experience'">
-        <career-experience-detail></career-experience-detail>
+        <career-experience-detail [experience]="experience"></career-experience-detail>
       </ng-container>
       <ng-container *ngSwitchCase="'education'">
         <education-experience></education-experience>

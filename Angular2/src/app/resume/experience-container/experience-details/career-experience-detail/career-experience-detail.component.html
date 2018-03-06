@@ -1,7 +1,7 @@
 <div class="career-experience-detail-container">
   <div class="career-detail-wrapper">
     <div class="career-time-range">
-      {{experience.startDate}} - {{experience.endDate}}
+      {{experience.startDate | dateConverter: 'MMM YYYY'}} - {{experience.endDate | dateConverter: 'MMM YYYY'}}
     </div>
     <div class="career-title">
       {{experience.title}} - <span class="career-title-company">{{experience.company}}</span>
@@ -18,4 +18,7 @@
   <div class="career-image-wrapper">
     <img class="career-image" [src]="experience.image" />
   </div>
+</div>
+<div class="technologies-wrapper">
+  <span class="technologies-title">Technologies used:</span> {{compileTechString()}}
 </div>

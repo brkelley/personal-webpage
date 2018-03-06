@@ -24,22 +24,22 @@
   "education": [
     {
       "title": "B.S. in Computer Science",
-      "startDate": "Jun 2012",
-      "endDate": "Dec 2016",
+      "startDate": "06-2012",
+      "endDate": "12-2016",
       "responsibilities": [
 
       ],
-      "image": "",
+      "image": "ncsu.png",
       "school": "NC State University"
     },
     {
       "title": "Diploma",
-      "startDate": "Aug 2009",
-      "endDate": "June 2012",
+      "startDate": "08-2009",
+      "endDate": "06-2012",
       "responsibilities": [
 
       ],
-      "image": "",
+      "image": "enloe.png",
       "school": "William G. Enloe High School"
     }
   ],
@@ -47,7 +47,7 @@
     {
       "title": "Associate Software Engineer",
       "company": "Fidelity Investments",
-      "startDate": "Jan 2017",
+      "startDate": "01-2017",
       "endDate": "Present",
       "type": "full-time",
       "responsibilities": [
@@ -72,8 +72,8 @@
     {
       "title": "Research Assistant",
       "company": "NC State University",
-      "startDate": "Aug 2016",
-      "endDate": "Jul 2016",
+      "startDate": "08-2016",
+      "endDate": "07-2016",
       "type": "part-time",
       "responsibilities": [
         "Gathered data on students' projects through their number of commits, commit messages, and test cases passed/failed in a database",
@@ -90,13 +90,16 @@
     {
       "title": "Teaching Assistant",
       "company": "NC State University",
-      "startDate": "Jan 2014",
-      "endDate": "Jun 2016",
+      "startDate": "01-2014",
+      "endDate": "06-2016",
       "type": "part-time",
       "responsibilities": [
         "Sat in an Introduction to Java class, helping students master the basics of Java and teaching the course when the teacher is absent",
         "Graded students' projects, tests, and homeworks",
         "Held office hours once a week to help students with their projects and any topics they are struggling with"
+      ],
+      "technologies": [
+        "Java"
       ],
       "relevantWebsites": [],
       "image": "ncsu.png"
@@ -104,8 +107,8 @@
     {
       "title": "Automation Engineer Intern",
       "company": "Credit Suisse",
-      "startDate": "Jun 2016",
-      "endDate": "Aug 2016",
+      "startDate": "06-2016",
+      "endDate": "08-2016",
       "type": "internship",
       "responsibilities": [
         "Updated and solidified Credit Suisse's custom Java library for simplified, Excel-based mobile testing using Appium and Perfecto",
@@ -129,8 +132,8 @@
     {
       "title": "Mobile Development Intern",
       "company": "PointSource, LLC",
-      "startDate": "Jun 2015",
-      "endDate": "Dec 2015",
+      "startDate": "06-2015",
+      "endDate": "12-2015",
       "type": "internship",
       "responsibilities": [
         "Learned about writing mobile applications and how to develop a useful, working mobile app in a restricted amount of time",
@@ -152,13 +155,21 @@
     {
       "title": "Software Engineer Intern",
       "company": "Bandwidth.com",
-      "startDate": "Jun 2014",
-      "endDate": "Jan 2015",
+      "startDate": "06-2014",
+      "endDate": "01-2015",
       "type": "internship",
       "responsibilities": [
         "Learned about the software engineering environment and how to develop projects in Agile",
         "Wrote, cleaned, and upgraded software APIs using RAML as a medium",
         "Cleaned and revamped API website"
+      ],
+      "technologies": [
+        "Java",
+        "Maven",
+        "RAML",
+        "AngularJS",
+        "HTML/CSS",
+        "REST"
       ],
       "relevantWebsites": ["https://api.test.inetwork.com/apidocks"],
       "image": "bandwidth.png"
@@ -168,8 +179,8 @@
     {
       "title": "Student Ambassador",
       "location": "NC State University",
-      "startDate": "Aug 2015",
-      "endDate": "Jul 2016",
+      "startDate": "08-2015",
+      "endDate": "07-2016",
       "responsibilities": [
         "Represented NC State's Computer Science department in various events",
         "Spoke with students and parents about the benefits of majoring in Computer Science"
@@ -179,8 +190,8 @@
     {
       "title": "Officer",
       "location": "ACM/AITP club at NC State University",
-      "startDate": "Aug 2015",
-      "endDate": "Jan 2016",
+      "startDate": "08-2015",
+      "endDate": "01-2016",
       "responsibilities": [
         "Scheduled meetings for the ACM/AITP club",
         "Organized events, booked venues, and advertised for ACM/AITP-hosted events"

@@ -1,3 +1,21 @@
-<p>
-  extracurricular-experience works!
-</p>
+<div class="extracurricular-experience-detail-container">
+  <div class="extracurricular-detail-wrapper">
+    <div class="extracurricular-time-range">
+      {{experience.startDate | dateConverter: 'MMM YYYY'}} - {{experience.endDate | dateConverter: 'MMM YYYY'}}
+    </div>
+    <div class="extracurricular-title">
+      {{experience.title}} - <span class="extracurricular-title-company">{{experience.location}}</span>
+    </div>
+    <div class="extracurricular-responsibilities">
+      <ul>
+        <li class="extracurricular-responsibility"
+            *ngFor="let responsibility of experience.responsibilities">
+          {{responsibility}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="extracurricular-image-wrapper">
+    <img class="extracurricular-image" [src]="experience.image" />
+  </div>
+</div>

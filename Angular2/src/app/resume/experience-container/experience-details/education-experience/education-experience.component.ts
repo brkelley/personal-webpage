@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { Education } from '../../../../models/resume/education.model';
 
 @Component({
   selector: 'education-experience',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationExperienceComponent implements OnInit {
 
+  @Input() experience: Education;
+
   constructor() { }
 
   ngOnInit() {
+    if (!this.experience.image.includes('assets/company-logos/')) {
+      this.experience.image = 'assets/company-logos/' + this.experience.image;
+    }
   }
 
 }

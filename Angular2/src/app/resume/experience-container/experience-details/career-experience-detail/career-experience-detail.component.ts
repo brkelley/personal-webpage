@@ -18,4 +18,12 @@ export class CareerExperienceDetailComponent implements OnInit {
       this.experience.image = 'assets/company-logos/' + this.experience.image;
     }
   }
+
+  compileTechString(): string {
+    let s = this.experience.technologies[0];
+    for (let i = 1; i < this.experience.technologies.length; i++) {
+      s += ', ' + this.experience.technologies[i];
+    }
+    return s;
+  }
 }

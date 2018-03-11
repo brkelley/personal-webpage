@@ -25,8 +25,8 @@ export class MainNavbarComponent implements OnInit {
 
     this.navItems = [
       {
-        displayName: 'About Me',
-        route: '/about-me'
+        displayName: 'Music',
+        route: '/music'
       },
       {
         displayName: 'Resume',

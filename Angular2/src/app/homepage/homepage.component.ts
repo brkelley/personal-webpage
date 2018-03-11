@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomepageComponent {
 
-  navItems: Object[] = ['About Me', 'Resume', 'Projects'];
+  navItems: Object[];
   socialMediaItems: Object[];
 
   constructor() {
     this.navItems = [
       {
-        displayName: 'About Me',
-        route: '/about-me'
+        displayName: 'Music',
+        route: '/music'
       },
       {
         displayName: 'Resume',

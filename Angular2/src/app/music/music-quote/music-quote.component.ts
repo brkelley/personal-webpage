@@ -7,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicQuoteComponent implements OnInit {
 
-  quote: {quote: string, author: string};
+  quote: {quote: string[], author: string};
 
   constructor() {
     this.quote = {
-      quote: 'All we wanna know is where the stars came from, but do we ever stop to watch them shine?',
+      quote: [
+        'All we wanna know is where the stars came from,',
+        'but do we ever stop to watch them shine?',
+      ],
       author: 'Jon Bellion'
     };
   }

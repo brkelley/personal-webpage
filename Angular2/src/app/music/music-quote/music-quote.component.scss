@@ -1,30 +1,37 @@
 @import '../../../styles';
 
 .music-quote-container {
-  padding: 40px 0;
-  width: 100%;
-  text-align: center;
-  color: $pws-eggshell;
+  display: flex;
+  justify-content: center;
+  padding: 35px;
 
-  .music-quote-quote {
-    display: flex;
-    justify-content: center;
-
-    .quote-icon {
-      font-size: 2rem;
-      align-self: flex-start;
-    }
-
-    .quote-text {
-      font-size: 2.8rem;
-      margin: 10px;
-      font-style: italic;
-    }
+  .quote-icon {
+    font-size: 8.5rem;
+    color: $pws-coral;
+    opacity: 0.8;
+    z-index: 1;
+    align-self: flex-start;
   }
 
-  .music-quote-author {
-    font-size: 2.4rem;
-    padding-left: 25%;
-    margin: 30px;
+  .quote-text {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0 0 -20px;
+    color: $pws-eggshell;
+    opacity: 1;
+    z-index: 5;
+
+    .quote-text-quote {
+      font-size: 2.8rem;
+      font-style: italic;
+      margin: 5px;
+    }
+
+    .quote-text-author {
+      margin-top: 20px;
+      font-size: 2.1rem;
+      text-align: center;
+    }
   }
 }

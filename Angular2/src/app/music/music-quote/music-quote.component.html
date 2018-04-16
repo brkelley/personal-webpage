@@ -4,7 +4,7 @@
   </div>
   <div class="quote-text">
     <div class="quote-text-quote" *ngFor="let quoteLine of quote.quote, let idx = index">
-      {{quoteLine}} <span *ngIf="idx === quote.quote.length - 1">"</span>
+      {{quoteLine}}<span *ngIf="idx === quote.quote.length - 1">"</span>
     </div>
     <div class="quote-text-author">
       - {{quote.author}}

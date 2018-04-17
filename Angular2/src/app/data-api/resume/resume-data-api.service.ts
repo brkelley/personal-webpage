@@ -13,7 +13,7 @@ export class ResumeDataApiService {
 
   getResume(): Observable<Resume> {
     if (!environment.useServer) {
-      return this.http.get<Resume>('http://localhost:4200/assets/server-data/resume.json');
+      return this.http.get<Resume>('assets/server-data/resume.json');
     } else {
       this.toastr.error('Server is down!', 'Error');
       throw new Error();

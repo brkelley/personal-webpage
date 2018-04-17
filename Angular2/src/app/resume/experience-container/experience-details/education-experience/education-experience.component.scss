@@ -1,0 +1,36 @@
+@import '../../../../../styles';
+
+.education-experience-container {
+  display: flex;
+  overflow: hidden;
+
+  .education-detail-wrapper {
+    padding: 25px;
+    color: $pws-navy-blue;
+    flex: 1 0 75%;
+
+    .location-title {
+      font-size: 3.2rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .education-detail {
+      font-size: 2.2rem;
+      padding: 4px 4px 4px 25px;
+    }
+  }
+
+  .education-image-wrapper {
+    flex: 1 0 25%;
+    display: flex;
+
+    .education-image {
+      align-self: center;
+      width: 100%;
+      height: auto;
+      opacity: 0.9;
+      padding: 50px;
+    }
+  }
+}

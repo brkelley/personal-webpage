@@ -1,0 +1,50 @@
+@import '../../../styles';
+
+.resume-jumbotron-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: $pws-leather;
+
+  .jumbotron-side-info-wrapper {
+    width: 35%;
+    height: 150px;
+    align-self: center;
+    text-align: center;
+    z-index: 5;
+    background-color: $pws-navy-blue;
+    color: $pws-coral;
+    font-size: 2.5rem;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+
+    &.left-side {
+      margin-right: -15px;
+    }
+    &.right-side {
+      margin-left: -15px;
+    }
+
+    .jumbotron-side-info {
+      align-self: center;
+
+      .jumbotron-side-info-content {
+        justify-content: center;
+        align-self: center;
+
+        &.primary-info {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .jumbotron-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: solid 8px $pws-leather;
+    z-index: 10;
+  }
+}

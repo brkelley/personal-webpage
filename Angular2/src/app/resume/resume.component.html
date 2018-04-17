@@ -1,45 +1,13 @@
 <div class="resume-wrapper" *ngIf="resume">
-
-  <!-- FULL TIME -->
-  <div class="full-time experience-container">
-    <div class="experience-label">
-      FULL - TIME
-      <hr class="experience-label-bar" />
-    </div>
-    <div class="experience-list-wrapper">
-      <ng-container *ngFor="let exp of filterResumeByType('full-time')">
-        <professional-experience [experienceData]="exp"></professional-experience>
-      </ng-container>
-    </div>
+  <div class="resume-jumbotron-wrapper">
+    <resume-jumbotron [contactInformation]="resume.contactInformation"></resume-jumbotron>
   </div>
-
-  <hr class="experience-container-separator" />
-
-  <!-- PART TIME -->
-  <div class="part-time experience-container">
-    <div class="experience-label">
-      PART - TIME
-      <hr class="experience-label-bar" />
-    </div>
-    <div class="experience-list-wrapper">
-      <ng-container *ngFor="let exp of filterResumeByType('part-time')">
-        <professional-experience [experienceData]="exp"></professional-experience>
-      </ng-container>
-    </div>
-  </div>
-
-  <hr class="experience-container-separator" />
-
-  <!-- internship -->
-  <div class="internship experience-container">
-    <div class="experience-label">
-      PART - TIME
-      <hr class="experience-label-bar" />
-    </div>
-    <div class="experience-list-wrapper">
-      <ng-container *ngFor="let exp of filterResumeByType('internship')">
-        <professional-experience [experienceData]="exp"></professional-experience>
-      </ng-container>
-    </div>
+  <!--<div class="resume-options">-->
+    <!--<a href="{{resumeLocation}}" download>-->
+      <!--<button class="pws-button">Download PDF</button>-->
+    <!--</a>-->
+  <!--</div>-->
+  <div class="experience-wrapper">
+    <experience-container [experienceCategories]="resumeCategories" [experiences]="resumeObjects"></experience-container>
   </div>
 </div>

@@ -1,0 +1,15 @@
+[
+  {
+    "project": "Personal Webpage",
+    "link": "https://github.com/brkelley/PersonalWebpage",
+    "language": "Angular 2",
+    "technologies": [
+      "Angular 2",
+      "Sass",
+      "Angular CLI",
+      "HTML"
+    ],
+    "snippet": "Personal website I created for my resume and to practice coding",
+    "description": "I chose to write my website in Angular 2. Originally I wanted to write in ReactJS so I could learn it, but I ultimately decided against it because my current job develops in Angular 2. I tried keeping to our coding standards of having a data api and service for each page, with routers for each tab. I also stuck to object-oriented Typescript with models for each object retrieved. I plan on having a NodeJS server with a MongoDB to give all the data to the page as soon as I can find a stable server (currently running on a Beaglebone). I hope you enjoy!"
+  }
+]

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Resume } from '../models/resume/resume.model';
-import { Experience } from '../models/resume/experience.model';
-import { ResumeService } from './resume.service';
+import { ResumeService } from '../core/services/resume/resume.service';
 import { ProfessionalExperience } from '../models/resume/professional-experience.model';
 
 @Component({
@@ -12,6 +12,9 @@ import { ProfessionalExperience } from '../models/resume/professional-experience
 export class ResumeComponent implements OnInit {
 
   resume: Resume;
+  resumeLocation = 'assets/Resume.pdf';
+  resumeCategories: string[];
+  resumeObjects: Object;
 
   constructor(private resumeService: ResumeService) { }
 
@@ -19,15 +22,36 @@ export class ResumeComponent implements OnInit {
     this.getResume();
   }
 
-  filterResumeByType(type: string): Experience[] {
-    return this.resume.professionalExperience.filter((el: ProfessionalExperience) => {
-      return el.type === type;
+  private getResume(): void {
+    this.resumeService.getResume().subscribe((resume: Resume) => {
+      this.resume = resume;
+      this.resumeCategories = this.extractResumeCategories();
+      this.resumeObjects = this.sortExperienceByCategories(this.resumeCategories);
     });
   }
 
-  getResume() {
-    this.resumeService.getResume().subscribe((data: Resume) => {
-      this.resume = data;
+  extractResumeCategories(): string[] {
+    let cats;
+    cats = this.resume.professionalExperience
+      .map((el: ProfessionalExperience) => el.type)
+      .filter((value, index, self) => {
+      return self.indexOf(value) === index;
     });
+    cats.push(...['education', 'other']);
+    return cats;
+  }
+
+  sortExperienceByCategories(categories: string[]): Object {
+    const exp = {};
+    for (const category of categories) {
+      if (category === 'other') {
+        exp[category] = this.resume.otherExperience;
+      } else if (category === 'education') {
+        exp[category] = this.resume.education;
+      } else {
+        exp[category] = this.resume.professionalExperience.filter(el => el.type === category);
+      }
+    }
+    return exp;
   }
 }

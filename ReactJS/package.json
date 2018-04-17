@@ -1,0 +1,15 @@
+{
+  "name": "PersonalWebpage-ReactJS",
+  "version": "1.0.0",
+  "description": "Brendan's personal webpage, written in ReactJS. Used to learn the ways of ReactJS.",
+  "main": "index.js",
+  "repository": "https://github.com/brkelley/PersonalWebpage",
+  "author": "Brendan Kelley",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}

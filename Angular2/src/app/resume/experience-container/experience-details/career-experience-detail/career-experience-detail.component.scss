@@ -1,0 +1,60 @@
+@import '../../../../../styles';
+
+.career-experience-detail-container {
+  display: flex;
+  overflow: hidden;
+
+  .career-detail-wrapper {
+    padding: 25px 25px 0 25px;
+    color: $pws-navy-blue;
+    flex: 1 0 75%;
+
+    .career-time-range {
+      font-size: 1.8rem;
+      color: $pws-coral;
+      font-weight: normal;
+    }
+
+    .career-title {
+      font-size: 3.2rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+
+      .career-title-company {
+        font-size: 2.8rem;
+        color: $pws-coral;
+      }
+    }
+
+    .career-responsibilities {
+      font-size: 1.9rem;
+
+      .career-responsibility {
+        margin: 8px;
+      }
+    }
+  }
+
+  .career-image-wrapper {
+    flex: 1 0 25%;
+    display: flex;
+
+    .career-image {
+      align-self: center;
+      width: 100%;
+      height: auto;
+      opacity: 0.9;
+      padding: 50px;
+    }
+  }
+}
+
+.technologies-wrapper {
+  color: $pws-navy-blue;
+  font-size: 2.1rem;
+  padding: 25px;
+
+  .technologies-title {
+    color: $pws-leather;
+  }
+}

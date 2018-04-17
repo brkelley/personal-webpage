@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
-@import url('https://fonts.googleapis.com/css?family=PT+Serif');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+$pws-navy-blue: #0F1626;
+$pws-leather: #AB987A;
+$pws-coral: #FF533D;
+$pws-eggshell: #F5F5F5;
 
 $website-main-light: #D4A59A;
 $website-main-medium: #BC4639;
@@ -17,7 +20,25 @@ $website-white: #F3E0DC;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Signika', serif;
   margin: 0;
   height: 100vh;
+  background-color: $pws-eggshell;
+}
+
+.pws-button {
+  text-decoration: none;
+  color: $pws-eggshell;
+  background-color: $pws-coral;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  font-size: 1.8rem;
+  box-shadow: 0 3px grey;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($pws-coral, 10%);
+  }
 }

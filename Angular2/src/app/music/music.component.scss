@@ -1,0 +1,62 @@
+@import '../../styles';
+
+.music-container {
+  padding-bottom: 50px;
+
+  .music-quote-wrapper {
+    background-color: $pws-navy-blue;
+    width: 100%;
+  }
+
+  .music-biography-container {
+    background-color: $pws-eggshell;
+    color: $pws-navy-blue;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+
+    .music-biography {
+      padding: 0 10vw;
+      font-size: 2rem;
+    }
+  }
+
+  .instrument-list-container {
+    padding-left: 4vw;
+
+    .instrument-list-title {
+      color: $pws-coral;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 16px 10vw;
+    }
+
+    .instrument-list-body {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 12vw;
+
+      .instrument-list-text {
+        font-size: 1.8rem;
+        flex: 8 1 auto;
+
+        .instrument-object {
+          display: flex;
+          margin: 4px;
+
+          .instrument-name {
+            flex: 0 1 150px;
+          }
+
+          .instrument-time {
+            flex: 1 0 auto;
+          }
+        }
+      }
+
+      .instrument-image {
+        flex: 1 1 auto;
+      }
+    }
+  }
+}

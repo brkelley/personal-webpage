@@ -1,0 +1,30 @@
+<div class="music-container">
+  <div class="music-quote-wrapper">
+    <music-quote></music-quote>
+  </div>
+  <div class="music-biography-container">
+    <div class="music-biography">
+      {{musicBiography}}
+    </div>
+  </div>
+  <div class="instrument-list-container">
+    <div class="instrument-list-title">
+      List of Instruments (to Date)
+    </div>
+    <div class="instrument-list-body">
+      <div class="instrument-list-text">
+        <div class="instrument-object" *ngFor="let instrument of instrumentList">
+          <div class="instrument-name">
+            {{instrument.instrument}}
+          </div>
+          <div class="instrument-time">
+            {{instrument.time}}
+          </div>
+        </div>
+      </div>
+      <div class="instrument-image">
+        <img src="assets/photos/drumline.png" />
+      </div>
+    </div>
+  </div>
+</div>

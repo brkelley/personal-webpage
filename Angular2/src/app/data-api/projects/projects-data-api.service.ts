@@ -9,6 +9,6 @@ export class ProjectsDataApiService {
   constructor(private http: HttpClient) { }
 
   getProjectInfo(): Observable<Project[]> {
-    return this.http.get<Project[]>('http://localhost:4200/assets/server-data/projects.json');
+    return this.http.get<Project[]>('assets/server-data/projects.json');
   }
 }

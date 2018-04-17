@@ -13,7 +13,7 @@ export class AboutMeDataApiService {
 
   getAutobiography(): Observable<Autobiography> {
     if (!environment.useServer) {
-      return this.http.get<Autobiography>('http://localhost:4200/assets/server-data/about-me.json');
+      return this.http.get<Autobiography>('assets/server-data/about-me.json');
     } else {
       this.toastr.error('Server is down!', 'Error');
       throw new Error();

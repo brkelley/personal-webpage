@@ -2,33 +2,35 @@
 
 .project-navbar-container {
   height: 100%;
-  background-color: $website-main-light;
+  background-color: $pws-leather;
 
   .project-tabs {
     display: flex;
     flex-direction: column;
+    padding-top: 2vh;
 
     .project-tab-container {
-
-      .active-tab {
-        background-color: $website-main-dark;
-        color: $website-white !important;
-      }
 
       .project-tab {
         text-align: center;
         align-self: center;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        font-weight: bold;
         padding-top: 2vh;
         padding-bottom: 2vh;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
+        //margin-top: 2vh;
+        //margin-bottom: 2vh;
         cursor: pointer;
-        color: $website-main-dark;
+        color: $pws-navy-blue;
+
+        &.active-tab {
+          background-color: $pws-eggshell;
+          color: $pws-coral !important;
+        }
       }
 
       .tab-separator {
-        border: solid 3px $website-main-medium;
+        border: solid 1px $pws-navy-blue;
         width: 80%;
         text-align: center;
         margin-top: 0;

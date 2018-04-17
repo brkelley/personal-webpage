@@ -2,26 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { HeaderNavComponent } from './header-nav/header-nav.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { ResumeComponent } from './resume/resume.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ProjectsModule } from './projects/projects.module';
-import { ProjectsComponent } from './projects/projects.component';
-import { ConcertSpotifyerModule } from './concert-spotifyer/concert-spotifyer.module';
-import { ResumeModule } from './resume/resume.module';
-import { DataApiModule } from './data-api/data-api.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import { AboutMeModule } from './about-me/about-me.module';
+
+import { AppComponent } from './app.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ProjectsModule } from './projects/projects.module';
+import { ProjectsComponent } from './projects/projects.component';
+import { ResumeModule } from './resume/resume.module';
+import { DataApiModule } from './data-api/data-api.module';
+import {HomepageModule} from './homepage/homepage.module';
+import { SharedModule } from './shared/shared.module';
+import { MusicModule } from './music/music.module';
+import { MusicComponent } from './music/music.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'about-me', component: AboutMeComponent },
+  { path: 'music', component: MusicComponent},
   {
     path: '',
     redirectTo: '/home',
@@ -31,11 +32,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderNavComponent,
-    HomepageComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
@@ -45,11 +42,13 @@ const appRoutes: Routes = [
     }),
     HttpClientModule,
     FormsModule,
+
+    DataApiModule,
+    HomepageModule,
     ProjectsModule,
     ResumeModule,
-    AboutMeModule,
-    ConcertSpotifyerModule,
-    DataApiModule
+    MusicModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,16 @@
+<div class="education-experience-container">
+  <div class="education-detail-wrapper">
+    <div class="location-title">
+      {{experience.school}}
+    </div>
+    <div class="education-detail">
+      {{experience.title}}
+    </div>
+    <div class="education-detail">
+      Graduated {{experience.endDate | dateConverter: 'MMMM YYYY'}}
+    </div>
+  </div>
+  <div class="education-image-wrapper">
+    <img class="education-image" [src]="experience.image" />
+  </div>
+</div>

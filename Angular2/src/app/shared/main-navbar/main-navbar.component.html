@@ -1,0 +1,12 @@
+<div *ngIf="currentRoute !== '/' && currentRoute !== '/home'" class="main-navbar-wrapper">
+  <div class="navbar-name-wrapper">
+    <div class="navbar-name" [routerLink]="['/home']">
+      <span class="first-name">Brendan</span> Kelley
+    </div>
+  </div>
+  <div class="navbar-items-wrapper">
+    <div class="navbar-item" *ngFor="let nav of navItems">
+      <div [ngClass]="{ 'chosen-navbar-item': currentRoute === nav.route }" [routerLink]="[nav.route]">{{nav.displayName}}</div>
+    </div>
+  </div>
+</div>

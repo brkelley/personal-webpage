@@ -1,0 +1,17 @@
+<div class="homepage-navbar-wrapper">
+  <div class="homepage-title-wrapper">
+    <div class="homepage-title">
+      Brendan Kelley
+    </div>
+    <div class="social-media-items-wrapper">
+      <div class="social-media-item" *ngFor="let smItem of socialMediaIcons">
+        <a class="social-media-link" href="{{smItem.link}}"><i [ngClass]="smItem.icon"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-items-wrapper">
+    <div class="nav-item-wrapper" *ngFor="let navItem of navItems" [routerLink]="[navItem.route]">
+      <span class="diagonal-span">{{navItem.displayName}}</span>
+    </div>
+  </div>
+</div>

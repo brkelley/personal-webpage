@@ -1,0 +1,44 @@
+@import '../../../styles';
+
+.main-navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.2rem;
+  background-color: $pws-navy-blue;
+  padding: 10px;
+  color: $pws-eggshell;
+
+  .navbar-name-wrapper {
+    flex: 1 0 auto;
+
+    .navbar-name {
+      font-size: 2.7rem;
+      color: darken($pws-eggshell, 10%);
+      cursor: pointer;
+
+      .first-name {
+        color: $pws-coral;
+      }
+    }
+  }
+
+  .navbar-items-wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    .navbar-item {
+      margin: 0 50px;
+
+      &:hover {
+        color: darken($pws-eggshell, 10%);
+        cursor: pointer;
+      }
+
+      .chosen-navbar-item {
+        color: $pws-leather;
+      }
+    }
+  }
+}

@@ -2,7 +2,8 @@
 
 .projects-container {
   height: 100%;
-  background-color: $website-white;
+  background-color: $pws-eggshell;
+  color: $pws-navy-blue;
   display: flex;
 
   .project-navbar-container {
@@ -17,17 +18,17 @@
     flex-wrap: wrap;
 
     .project-snippet-wrapper {
-      color: $website-main-medium;
+      color: $pws-coral;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
     .link-wrapper {
       a {
-        color: $website-main-dark !important;
+        color: $pws-leather !important;
 
         &:hover {
-          color: darken( $website-main-dark, 10% ) !important;
+          color: darken( $pws-leather, 10% ) !important;
         }
       }
     }
@@ -53,7 +54,7 @@
         .tech-title {
           font-size: 1.7rem;
           font-weight: bold;
-          color: $website-main-dark;
+          color: $pws-coral;
 
           &.secondary-title {
             padding-top: 20px;

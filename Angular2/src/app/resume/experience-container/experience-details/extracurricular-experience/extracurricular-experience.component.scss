@@ -1,0 +1,50 @@
+@import '../../../../../styles';
+
+.extracurricular-experience-detail-container {
+  display: flex;
+  overflow: hidden;
+
+  .extracurricular-detail-wrapper {
+    padding: 25px;
+    color: $pws-navy-blue;
+    flex: 1 0 75%;
+
+    .extracurricular-time-range {
+      font-size: 1.8rem;
+      color: $pws-coral;
+      font-weight: normal;
+    }
+
+    .extracurricular-title {
+      font-size: 3.2rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+
+      .extracurricular-title-company {
+        font-size: 2.8rem;
+        color: $pws-coral;
+      }
+    }
+
+    .extracurricular-responsibilities {
+      font-size: 1.9rem;
+
+      .extracurricular-responsibility {
+        margin: 8px;
+      }
+    }
+  }
+
+  .extracurricular-image-wrapper {
+    flex: 1 0 25%;
+    display: flex;
+
+    .extracurricular-image {
+      align-self: center;
+      width: 100%;
+      height: auto;
+      opacity: 0.9;
+      padding: 50px;
+    }
+  }
+}

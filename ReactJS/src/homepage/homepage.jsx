@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 class Homepage extends Component {
     render () {
         return (
-            <div>
-                <h1>Testing</h1>
+            <div className="homepage-wrapper">
+                <div className="name-wrapper">
+                    Brendan Kelley
+                </div>
             </div>
         );
     }

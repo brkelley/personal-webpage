@@ -9,7 +9,7 @@ class AppRoute extends Component {
     render () {
         return (
             <Router history={history}>
-                <div>
+                <div style={{ height: '100%', width: '100%' }}>
                     <Route exact path="/" component={Homepage} />
                 </div>
             </Router>

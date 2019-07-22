@@ -1,13 +1,60 @@
-.homepage-wrapper {
-    background-image: url('../assets/raleigh_skyline.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+@import '../style/variables.scss';
 
+.homepage-wrapper {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('../assets/raleigh_skyline.jpg');
+    background-size: cover;
+    
     height: 100%;
     width: 100%;
 
-    .name-wrapper {
-        background-color: purple;
-        color: white;
+    .homepage {
+        padding-top: 10%;
+        display: flex;
+        justify-content: space-around;
+
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .text {
+                font-weight: bold;
+                padding: 0 0 20px 40px;
+
+                &.category {
+                    font-size: 2rem;
+
+                    .text-route {
+                        color: $coral;
+                        cursor: default;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $pink;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                &.name {
+                    font-size: 3.5rem;
+                    padding-left: 0;
+                    color: white;
+                }
+            }
+        }
+
+        .avatar-wrapper {
+            padding-right: 200px;
+
+            .avatar {
+                border-radius: 50%;
+                width: 350px;
+                height: 350px;
+            }
+        }
     }
 }

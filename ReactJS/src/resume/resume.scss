@@ -1,0 +1,12 @@
+@import '../style/variables.scss';
+
+.resume-wrapper {
+    width: 100%;
+    height: 100%;
+    color: white;
+
+    display: flex;
+}
+
+@import './resume-navbar/resume-navbar.scss';
+@import './resume-details/resume-details.scss';

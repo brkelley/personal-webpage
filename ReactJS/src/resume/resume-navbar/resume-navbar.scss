@@ -1,0 +1,43 @@
+@import '../../style/variables.scss';
+
+.resume-navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 24px;
+
+    .resume-navbar__selfie {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 32px;
+    }
+
+    .contact-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+
+        .contact-info-item {
+            margin: 4px;
+        }
+    }
+
+    .resume-navbar__label {
+        padding: 12px;
+        font-size: 1.3rem;
+        color: $light-grey;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            border-bottom: solid 1px $light-grey;
+        }
+
+        &.active-section {
+            color: white;
+        }
+    }
+}

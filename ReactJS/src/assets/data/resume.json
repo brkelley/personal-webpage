@@ -53,11 +53,10 @@
       "endDate": "Present",
       "type": "full-time",
       "responsibilities": [
-        "Helped create a simplistic UI for Pendo customers to analyze and act on their page's data",
-        "Worked on the website's migration from AngularJS to VueJS",
+        "Worked on a fast-paced full-stack team to deliver analytics tools so Pendo customers can see visual representations of their website's events",
+        "Worked on the website's migration from AngularJS to VueJS while delivering scalable code on startup deadlines",
         "Created a retention-based analytics tool that shows Pendo's customers which visitors and accounts are staying per time range",
-        "Aggregated and analyzed data using an in-house aggregation language to sort through billions of data points",
-        "Led multiple JIRA epics on a front-end team of 5"
+        "Aggregated and analyzed data using an in-house aggregation language to sort through billions of data points"
       ],
       "technologies": [
         "AngularJS",

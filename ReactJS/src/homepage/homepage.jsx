@@ -20,14 +20,14 @@ class Homepage extends Component {
                         <div className="text category">
                             <NavLink
                                 className="text-route"
-                                to="/resume">
+                                to="/about-me">
                                 About me
                             </NavLink>
                         </div>
                         <div className="text category">
                             <NavLink
                                 className="text-route"
-                                to="/resume">
+                                to="/projects">
                                 Projects
                             </NavLink>
                         </div>

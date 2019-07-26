@@ -5,6 +5,8 @@ import TopNavbar from './components/top-navbar/top-navbar.jsx';
 
 import Homepage from './homepage/homepage.jsx';
 import Resume from './resume/resume.jsx';
+import AboutMe from './about-me/about-me.jsx';
+import Projects from './projects/projects.jsx';
 
 const history = createBrowserHistory();
 
@@ -28,6 +30,8 @@ class AppRoute extends Component {
                 <div className={this.state.isOnHomepage ? 'router-wrapper' : 'router-wrapper-with-navbar'}>
                     <Route exact path="/" onChange={this.onRouteChange} component={Homepage} />
                     <Route exact path="/resume" component={Resume} />
+                    <Route exact path="/about-me" component={AboutMe} />
+                    <Route exact path="/projects" component={Projects} />
                 </div>
             </Router>
         );

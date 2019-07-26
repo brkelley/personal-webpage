@@ -28,14 +28,14 @@ class TopNavbar extends Component {
                     </NavLink>
                     <NavLink
                         className="navbar__link"
-                        to="/"
+                        to="/about-me"
                         exact
                         activeClassName="active-link">
                         About me
                     </NavLink>
                     <NavLink
                         className="navbar__link"
-                        to="/"
+                        to="/projects"
                         exact
                         activeClassName="active-link">
                         Projects

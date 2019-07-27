@@ -1,0 +1,41 @@
+@import '../style/variables.scss';
+
+.dropdown-wrapper {
+    padding-left: 24px;
+
+    .dropdown-trigger {
+        font-size: 3.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px $pink;
+        padding: 8px;
+        margin-bottom: 4px;
+        cursor: pointer;
+
+        .dropdown-trigger-text {
+            color: white;
+        }
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        width: 300px;
+        background-color: $dark-grey;
+        font-size: 1.1rem;
+        transition: color .3s;
+
+        .dropdown-menu-item {
+            padding: 16px;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: darken($dark-grey, 5%);
+            }
+
+            &:not(:first-child) {
+                border-top: solid 0.5px $light-grey;
+            }
+        }
+    }
+}

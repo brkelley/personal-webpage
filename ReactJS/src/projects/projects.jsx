@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import AnimateHeight from 'react-animate-height';
+import projectData from '../assets/data/projects.json';
+import Dropdown from '../components/dropdown/dropdown.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import get from 'lodash/get';
 
 export default class Projects extends Component {
     constructor (props) {
@@ -7,85 +11,105 @@ export default class Projects extends Component {
         
         this.state = {
             dropdownHeight: 0,
-            currentProject: 'Personal Webpage'
+            currentProject: null,
+            projects: projectData
         }
 
-        this.toggleDropdown = this.toggleDropdown.bind(this);
-        this.handleClick = this.handleClick.bind(this);
-        this.renderProjectDropdown = this.renderProjectDropdown.bind(this);
-        this.onDropdownSelection = this.onDropdownSelection.bind(this);
+        this.onSelect = this.onSelect.bind(this);
+        this.renderProjectDetails = this.renderProjectDetails.bind(this);
+        this.renderLookingPoints = this.renderLookingPoints.bind(this);
+        this.renderLogos = this.renderLogos.bind(this);
     }
 
-    toggleDropdown () {
-        const { dropdownHeight } = this.state;
-        this.setState({ dropdownHeight: dropdownHeight === 0 ? 'auto' : 0 });
+    onSelect (selected) {
+        const currentProject = this.state.projects.find(el => el.id === selected.key);
+        this.setState({ currentProject });
     }
 
-    handleClick (e) {
-        if (this.state.dropdownHeight === 0 || this.menu.contains(e.target) || this.trigger.contains(e.target)) return;
-        this.toggleDropdown();
-    }
-
-    componentWillMount () {
-        document.addEventListener('mousedown', this.handleClick, false);
-    }
-
-    componentWillUnmount () {
-        document.removeEventListener('mousedown', this.handleClick, false);
-    }
-
-    onDropdownSelection (selected) {
-        this.setState({ currentProject: selected });
-        this.toggleDropdown();
-    }
-
-    renderProjectDropdown () {
-        const { dropdownHeight } = this.state;
-        const chevronClass = `dropdown-caret${dropdownHeight === 'auto' ? ' dropdown-open-caret' : ''}`;
-
-        return (
-            <div className="project__dropdown">
-                <div
-                    className="dropdown-trigger"
-                    ref={trigger => this.trigger = trigger}
-                    onClick={() => this.toggleDropdown()}>
-                    <span className="dropdown-trigger-text">{this.state.currentProject}</span>
-                    <div className={chevronClass}>
-                        <i data-feather="chevron-down"></i>
+    renderProjectDetails () {
+        if (this.state.currentProject) {
+            const currProject = this.state.currentProject;
+            return (
+                <div className="project__details-wrapper">
+                    <div className="project__technologies-logos-wrapper">
+                        {this.renderLogos()}
+                    </div>
+                    <div className="project__full-description">
+                        {currProject.description}
+                    </div>
+                    <div className="project__auxiliary-details">
+                        <div className="project__simple-details">
+                            <div className="project__primary-language">
+                                <span className="language-label">Language:</span>
+                                <span className="language-value">
+                                    {currProject.language}
+                                </span>
+                            </div>
+                            <div className="project__github-link-wrapper">
+                                <a
+                                    className="github-link"
+                                    href={currProject.link}>
+                                    <FontAwesomeIcon
+                                        className="github-icon"
+                                        icon={faGithub} />
+                                </a>
+                            </div>
+                        </div>
+                        {this.renderLookingPoints()}
                     </div>
                 </div>
-                <AnimateHeight
-                    duration={150}
-                    height={dropdownHeight}
-                    className="dropdown-menu">
-                    <div ref={menu => this.menu = menu}>
-                        <div
-                            className="dropdown-menu-item"
-                            onClick={() => this.onDropdownSelection('Personal Webpage')}>
-                            Personal Webpage
-                        </div>
-                        <div
-                            className="dropdown-menu-item"
-                            onClick={() => this.onDropdownSelection('Fitness App')}>
-                            Fitness App
-                        </div>
-                        <div
-                            className="dropdown-menu-item"
-                            onClick={() => this.onDropdownSelection('Team Homepage')}>
-                            Team Homepage
-                        </div>
-                    </div>
-                </AnimateHeight>
+            );
+        }
+    }
+
+    renderLookingPoints () {
+        return (
+            <div className="project__key-notes">
+                <div className="key-notes-title">
+                    Features to look for
+                </div>
+                <ul>
+                    {this.state.currentProject.lookPoints.map(look => {
+                        return <li key={look}>{look}</li>;
+                    })}
+                </ul>
             </div>
         );
     }
+    
+    renderLogos () {
+        const { technologies } = this.state.currentProject;
+        return technologies.map(technology => {
+            return (
+                <div
+                    className="tech-logo-wrapper"
+                    key={technology.label}>
+                    <img
+                        className="tech-logo"
+                        src={require(`../assets/technology-logos/${technology.icon}`)} />
+                </div>
+            )
+        });
+    }
 
     render () {
+        const dropdownValues = this.state.projects.map(project => {
+            return { label: project.project, key: project.id };
+        });
+
         return (
             <div className="project-wrapper">
-                <div className="project__title">
-                    {this.renderProjectDropdown()}
+                <div className="project__selector-wrapper">
+                    <div className="project__dropdown-wrapper">
+                        <Dropdown
+                            options={dropdownValues}
+                            onSelect={this.onSelect} />
+                    </div>
+                    <div className="project__snippet">
+                        {get(this.state.currentProject, 'snippet', '')}
+                    </div>
                 </div>
+                {this.renderProjectDetails()}
             </div>
         );
     }

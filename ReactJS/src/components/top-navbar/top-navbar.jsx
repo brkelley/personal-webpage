@@ -45,7 +45,7 @@ class TopNavbar extends Component {
                         to="/"
                         exact
                         activeClassName="active-link">
-                        Music
+                        Fitness
                     </NavLink>
                 </div>
             </div>

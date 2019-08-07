@@ -35,7 +35,7 @@ class Homepage extends Component {
                             <NavLink
                                 className="text-route"
                                 to="/resume">
-                                Music
+                                Fitness
                             </NavLink>
                         </div>
                     </div>

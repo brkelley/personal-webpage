@@ -1,0 +1,103 @@
+{
+  "quickDetails": {
+    "name": "Brendan Kelley",
+    "nickname": "Bebo",
+    "hometown": "Raleigh, NC",
+    "profession": "Front-End Engineer",
+    "alma mater": "North Carolina State University"
+  },
+  "biography": "I was born in Riverside, California, but moved to Raleigh, North Carolina when I was 2 years old. I have lived & worked in Raleigh ever since then. I went to high school at Enloe High School and graduated from North Carolina State University with a bachelor's degree in Computer Science in 2016. Since 6th grade, I have loved music. I've played trumpet, trombone, baritone, french horn, and tuba until I finally discovered drums & percussion. I played in my high school's drumline and in NC State's drumline. In my spare time, I hang out with my friends, go to the gym, travel, and play video games.",
+  "originStory": "I started college intending to major in a chemistry field. However, after struggling through Chemical Engineering, Paper Science & Engineering, and Geology, I realized that Chemistry just isn't the field for me. My sister graduated NC State with a Computer Science degree and she recommended that I try a Computer Science class. I was hesitant at first (living in sibling's shadow is difficult), but I eventually cracked and took Introduction to Computer Science. I fell in love immediately. I found out what specialty I wanted when I had my PointSource internship. I loved coding in AngularJS and I knew then that I wanted to do front-end development.",
+  "hobbies": [
+    {
+      "title": "backpacking",
+      "class": "fas fa-hiking"
+    },
+    {
+      "title": "drumming",
+      "class": "fas fa-drum"
+    },
+    {
+      "title": "fitness & weightlifting",
+      "class": "fas fa-dumbbell"
+    },
+    {
+      "title": "concerts",
+      "class": "fas fa-music"
+    },
+    {
+      "title": "traveling",
+      "class": "fas fa-map-pin"
+    },
+    {
+      "title": "playing guitar / piano",
+      "class": "fas fa-guitar"
+    }
+  ],
+  "photos": [
+    "drumline.png",
+    "brkelley-avatar-mohawk.png",
+    "gymflex.jpg",
+    "lawrence.jpeg",
+    "mewithglades.jpg",
+    "sister-fair-2.png",
+    "sisterfair3.jpg"
+  ],
+  "traveling": [
+    {
+      "name": "Puerto Plata, Dominican Republic",
+      "lat": 19.816072,
+      "lng": -70.716527
+    },
+    {
+      "name": "Grand Cayman Islands",
+      "lat": 19.316173,
+      "lng":  -81.385401
+    },
+    {
+      "name": "Cozumel, Mexico",
+      "lat": 20.373873,
+      "lng": -87.024040
+    },
+    {
+      "name": "Freeport, Bahamas",
+      "lat": 26.514133,
+      "lng": -78.633507
+    },
+    {
+      "name": "Madrid, Spain",
+      "lat": 40.425382,
+      "lng": -3.698428
+    },
+    {
+      "name": "Barcelona, Spain",
+      "lat": 41.391119,
+      "lng": 2.178977
+    },
+    {
+      "name": "Choluteca, Honduras",
+      "lat": 13.316078,
+      "lng": -87.172134
+    },
+    {
+      "name": "Portland, Oregon",
+      "lat": 45.505398,
+      "lng": -122.653343
+    },
+    {
+      "name": "San Diego, California",
+      "lat": 32.750571,
+      "lng": -117.145459
+    },
+    {
+      "name": "New Orleans, Louisiana",
+      "lat": 30.007353,
+      "lng": -90.067266
+    },
+    {
+      "name": "Denver, Colorado",
+      "lat": 39.734687,
+      "lng": -104.947148
+    }
+  ]
+}

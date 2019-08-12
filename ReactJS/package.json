@@ -6,11 +6,6 @@
     "repository": "https://github.com/brkelley/PersonalWebpage",
     "author": "Brendan Kelley",
     "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^1.2.19",
-        "@fortawesome/free-brands-svg-icons": "^5.9.0",
-        "@fortawesome/free-regular-svg-icons": "^5.9.0",
-        "@fortawesome/free-solid-svg-icons": "^5.9.0",
-        "@fortawesome/react-fontawesome": "^0.1.4",
         "axios": "^0.18.0",
         "google-maps-react": "^2.0.2",
         "moment": "^2.24.0",
@@ -36,8 +31,15 @@
         "react-hot-loader": "^4.8.4",
         "webpack-dev-server": "^3.3.1"
     },
+    "devDependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.19",
+        "@fortawesome/free-brands-svg-icons": "^5.9.0",
+        "@fortawesome/free-regular-svg-icons": "^5.9.0",
+        "@fortawesome/free-solid-svg-icons": "^5.9.0",
+        "@fortawesome/react-fontawesome": "^0.1.4"
+    },
     "scripts": {
-        "start": "webpack-dev-server --config ./webpack.config.js --mode=development --port 8080",
+        "start-dev": "webpack-dev-server --config ./webpack.config.js --mode=development --port 8080",
         "bundle": "webpack --mode=production --config webpack.production.config.js",
         "prestart": "npm install && npm run bundle"
     }

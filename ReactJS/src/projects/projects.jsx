@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import projectData from '../assets/data/projects.json';
 import Dropdown from '../components/dropdown/dropdown.jsx';
 import get from 'lodash/get';
@@ -44,8 +46,12 @@ export default class Projects extends Component {
                                 </span>
                             </div>
                             <div className="project__github-link-wrapper">
-                                <a href={currProject.link}>
-                                    <i className="fab fa-github"></i>
+                                <a
+                                    className="github-link"
+                                    href={currProject.link}>
+                                    <FontAwesomeIcon
+                                        icon={faGithub}
+                                        size="5x" />
                                 </a>
                             </div>
                         </div>

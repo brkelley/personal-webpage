@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHiking, faDrum, faDumbbell, faMusic, faMapPin, faGuitar } from '@fortawesome/free-solid-svg-icons';
 import aboutMeData from '../assets/data/about-me.json';
 import MapContainer from './map-container/map-container.jsx';
 import toPairs from 'lodash/toPairs';
@@ -16,6 +18,7 @@ class AboutMe extends Component {
     }
 
     renderHobbiesList () {
+        const faIcons = { faHiking, faDrum, faDumbbell, faMusic, faMapPin, faGuitar };
         return (
             <div className="section-content hobbies-content">
                 <div className="hobbies-photo-wrapper">
@@ -30,7 +33,9 @@ class AboutMe extends Component {
                                 className="hobby-wrapper"
                                 key={hobby.title}>
                                 <div className="hobby-icon">
-                                    <i className={`${hobby.class} fa-lg`}></i>
+                                    <FontAwesomeIcon
+                                        icon={faIcons[hobby.class]}
+                                        size="lg" />
                                 </div>
                                 <div className="hobby-list-item">
                                     {hobby.title}

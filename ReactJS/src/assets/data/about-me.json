@@ -11,27 +11,27 @@
   "hobbies": [
     {
       "title": "backpacking",
-      "class": "fas fa-hiking"
+      "class": "faHiking"
     },
     {
       "title": "drumming",
-      "class": "fas fa-drum"
+      "class": "faDrum"
     },
     {
       "title": "fitness & weightlifting",
-      "class": "fas fa-dumbbell"
+      "class": "faDumbbell"
     },
     {
       "title": "concerts",
-      "class": "fas fa-music"
+      "class": "faMusic"
     },
     {
       "title": "traveling",
-      "class": "fas fa-map-pin"
+      "class": "faMapPin"
     },
     {
       "title": "playing guitar / piano",
-      "class": "fas fa-guitar"
+      "class": "faGuitar"
     }
   ],
   "photos": [
@@ -98,6 +98,16 @@
       "name": "Denver, Colorado",
       "lat": 39.734687,
       "lng": -104.947148
+    },
+    {
+      "name": "Dallas, Texas",
+      "lat": 32.764880,
+      "lng": -96.794756
+    },
+    {
+      "name": "Galveston, Texas",
+      "lat": 29.317896,
+      "lng": -94.753554
     }
   ]
 }

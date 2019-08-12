@@ -40,13 +40,13 @@ class TopNavbar extends Component {
                         activeClassName="active-link">
                         Projects
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         className="navbar__link"
                         to="/"
                         exact
                         activeClassName="active-link">
                         Fitness
-                    </NavLink>
+                    </NavLink> */}
                 </div>
             </div>
         );

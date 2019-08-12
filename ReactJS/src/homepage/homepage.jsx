@@ -31,13 +31,13 @@ class Homepage extends Component {
                                 Projects
                             </NavLink>
                         </div>
-                        <div className="text category">
+                        {/* <div className="text category">
                             <NavLink
                                 className="text-route"
                                 to="/resume">
                                 Fitness
                             </NavLink>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="avatar-wrapper">
                         <img

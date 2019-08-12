@@ -6,6 +6,10 @@
     "language": "ReactJS / Angular 2",
     "technologies": [
       {
+        "label": "Google Cloud",
+        "icon": "google-cloud.png"
+      },
+      {
         "label": "Webpack",
         "icon": "webpack.png"
       },
@@ -24,19 +28,16 @@
       {
         "label": "Sass",
         "icon": "sass.svg"
-      },
-      {
-        "label": "HTML",
-        "icon": "html.png"
       }
     ],
     "snippet": "Personal website I created for my resume and to practice coding",
-    "description": "This project actually has 2 different versions, one in Angular 2 and one in ReactJS. I originally wrote it in Angular 2, but I wanted to learn ReactJS and Webpack. The Angular 2 side is built using Angular CLI with Typescript, and employs the coding standards of a data api and service for each page as well as routing. The ReactJS version has a homemade Webpack & Babel configuration, and uses React Router. As of now, this website is hosted on a Raspberry Pi, but I have future plans to deploy it to a Google AppEngine.",
+    "description": "This project actually has 2 different versions, one in Angular 2 and one in ReactJS. I originally wrote it in Angular 2, but I wanted to learn ReactJS and Webpack. The Angular 2 side is built using Angular CLI with Typescript, and employs the coding standards of a data api and service for each page as well as routing. The ReactJS version has a homemade Webpack & Babel configuration, and uses React Router. The website is also hosted on Google Cloud's app engine.",
     "lookPoints": [
       "ReactJS AnimateHeight library",
       "sass animations",
       "custom webpack configuration",
-      "React and Angular componentization based on route"
+      "React and Angular componentization based on route",
+      "Google Cloud App Engine hosting"
     ]
   }
 ]

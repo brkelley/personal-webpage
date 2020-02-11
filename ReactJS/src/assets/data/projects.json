@@ -1,43 +1,94 @@
 [
-  {
-    "project": "Personal Webpage",
-    "id": "personalWebpage",
-    "link": "https://github.com/brkelley/PersonalWebpage",
-    "language": "ReactJS / Angular 2",
-    "technologies": [
-      {
-        "label": "Google Cloud",
-        "icon": "google-cloud.png"
-      },
-      {
-        "label": "Webpack",
-        "icon": "webpack.png"
-      },
-      {
-        "label": "Babel",
-        "icon": "babel.png"
-      },
-      {
-        "label": "ReactJS",
-        "icon": "react.png"
-      },
-      {
-        "label": "Angular 2",
-        "icon": "angular.png"
-      },
-      {
-        "label": "Sass",
-        "icon": "sass.svg"
-      }
-    ],
-    "snippet": "Personal website I created for my resume and to practice coding",
-    "description": "This project actually has 2 different versions, one in Angular 2 and one in ReactJS. I originally wrote it in Angular 2, but I wanted to learn ReactJS and Webpack. The Angular 2 side is built using Angular CLI with Typescript, and employs the coding standards of a data api and service for each page as well as routing. The ReactJS version has a homemade Webpack & Babel configuration, and uses React Router. The website is also hosted on Google Cloud's app engine.",
-    "lookPoints": [
-      "ReactJS AnimateHeight library",
-      "sass animations",
-      "custom webpack configuration",
-      "React and Angular componentization based on route",
-      "Google Cloud App Engine hosting"
-    ]
-  }
+    {
+        "project": "Personal Webpage",
+        "id": "personalWebpage",
+        "link": "https://github.com/brkelley/PersonalWebpage",
+        "language": "ReactJS / Angular 2",
+        "technologies": [
+            {
+                "label": "Google Cloud",
+                "icon": "google-cloud.png"
+            },
+            {
+                "label": "Webpack",
+                "icon": "webpack.png"
+            },
+            {
+                "label": "Babel",
+                "icon": "babel.png"
+            },
+            {
+                "label": "ReactJS",
+                "icon": "react.png"
+            },
+            {
+                "label": "Angular 2",
+                "icon": "angular.png"
+            },
+            {
+                "label": "Sass",
+                "icon": "sass.svg"
+            }
+        ],
+        "snippet": "Personal website I created for my resume and to practice coding",
+        "description": "This project actually has 2 different versions, one in Angular 2 and one in ReactJS. I originally wrote it in Angular 2, but I wanted to learn ReactJS and Webpack. The Angular 2 side is built using Angular CLI with Typescript, and employs the coding standards of a data api and service for each page as well as routing. The ReactJS version has a homemade Webpack & Babel configuration, and uses React Router. The website is also hosted on Google Cloud's app engine.",
+        "lookPoints": [
+        "ReactJS AnimateHeight library",
+        "sass animations",
+        "custom webpack configuration",
+        "React and Angular componentization based on route",
+        "Google Cloud App Engine hosting"
+        ]
+    },
+    {
+        "project": "Squad",
+        "id": "squad",
+        "link": "https://github.com/brkelley/squad",
+        "language": "ReactJS / NodeJS / Firebase",
+        "technologies": [
+            {
+                "label": "Google Cloud",
+                "icon": "google-cloud.png"
+            },
+            {
+                "label": "Webpack",
+                "icon": "webpack.png"
+            },
+            {
+                "label": "Babel",
+                "icon": "babel.png"
+            },
+            {
+                "label": "ReactJS",
+                "icon": "react.png"
+            },
+            {
+                "label": "Firebase",
+                "icon": "firebase.png"
+            },
+            {
+                "label": "Redux",
+                "icon": "redux.png"
+            },
+            {
+                "label": "Sass",
+                "icon": "sass.svg"
+            },
+            {
+                "label": "NodeJS",
+                "icon": "nodejs.png"
+            }
+        ],
+        "snippet": "Web app for players to converge and compete against each other in a group",
+        "description": "This project was born from my friend group's love of League of Legends and professional esports. We watch every week, and last year we decided to make a prediction game to predict the winner of each match. We kept track of each player's predictions on a google spreadsheet but quickly realized that that was not sustainable. So I decided to build a website for us to be able to track our predictions and see each other's. I chose ReactJS because I wanted to learn it, but also because there are lots of moving parts and I needed a robust componentization library. I also used Redux to keep track of all the data pulled and updated throughout the app. In the future, I plan on making this more robust, like seeing other player's rankings and winrates, as well as prizes for competing.",
+        "lookPoints": [
+            "ReactJS Hooks",
+            "Redux store for consistent data",
+            "Minimal backend calls to keep Google Cloud prices low",
+            "NodeJS server connected to Google AppEngine and Google Flex",
+            "custom webpack configuration",
+            "React componentization based on route",
+            "Google Cloud App Engine hosting"
+        ]
+    }
 ]

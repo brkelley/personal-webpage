@@ -108,6 +108,21 @@
       "name": "Galveston, Texas",
       "lat": 29.317896,
       "lng": -94.753554
+    },
+    {
+      "name": "Raleigh, North Carolina",
+      "lat": 35.780826,
+      "lng": -78.646088
+    },
+    {
+      "name": "Indianapolis, Indiana",
+      "lat": 39.803970,
+      "lng": -86.156789
+    },
+    {
+      "name": "Atlanta, Georgia",
+      "lat": 33.761414,
+      "lng": -84.386617
     }
   ]
 }

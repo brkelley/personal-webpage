@@ -1,0 +1,10 @@
+timeout: 1000s
+steps:
+- name: node
+  entrypoint: npm
+  args: ["ci", "--prefix", "ReactJS"]
+- name: node
+  entrypoint: npm
+  args: ["run", "bundle"]
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "--promote"]

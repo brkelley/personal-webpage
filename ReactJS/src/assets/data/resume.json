@@ -59,11 +59,11 @@
         "Designed and built a \"Data Sandbox\" using an in-house aggregation language so customers can dynamically retrieve and view analytics in a meaningful way"
       ],
       "technologies": [
-        "AngularJS",
-        "VueJS",
+        "VueJS / Vuex",
         "HTML / Sass",
         "Jest",
-        "Karma/Jasmine",
+        "AngularJS",
+        "Karma / Jasmine",
         "REST API",
         "JIRA"
       ]
@@ -85,7 +85,7 @@
         "Angular 2",
         "HTML",
         "Sass",
-        "Karma/Jasmine",
+        "Karma / Jasmine",
         "REST API",
         "Spring",
         "SQL & PL-SQL"
@@ -192,7 +192,7 @@
         "Maven",
         "RAML",
         "AngularJS",
-        "HTML/CSS",
+        "HTML / CSS",
         "REST"
       ],
       "relevantWebsites": ["https://api.test.inetwork.com/apidocks"],

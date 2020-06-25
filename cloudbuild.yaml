@@ -5,6 +5,6 @@ steps:
   args: ["ci", "--prefix", "ReactJS"]
 - name: node
   entrypoint: npm
-  args: ["run", "bundle"]
+  args: ["run", "bundle", "--prefix", "ReactJS"]
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy", "--promote"]

@@ -1,9 +1,20 @@
 runtime: nodejs10
 handlers:
-- url: /
-  static_files: dist/index.html
-  upload: dist/index.html
+- url: /api/.*
+  script: auto
 
-- url: /(.*)
-  static_files: dist/\1
-  upload: dist/(.*)
+- url: /bundle.js
+  static_files: client/dist/bundle.js
+  upload: client/dist/bundle.js
+
+- url: /?(.*\.(json|ico|js))$
+  static_files: client/dist/\1
+  upload: client/dist/.*\.(json|ico|js)$
+
+- url: /
+  static_files: client/dist/index.html
+  upload: client/dist/index.html
+
+- url: /.*
+  static_files: client/dist/index.html
+  upload: client/dist/index.html

@@ -4,9 +4,9 @@ handlers:
   static_files: ReactJS/dist/bundle.js
   upload: ReactJS/dist/bundle.js
 
-- url: /?(.*\.(json|ico|js))$
+- url: /?(.*\.(json|ico|js|png|svg|jpg))$
   static_files: ReactJS/dist/\1
-  upload: ReactJS/dist/.*\.(json|ico|js)$
+  upload: ReactJS/dist/.*\.(json|ico|js|png|svg|jpg)$
 
 - url: /
   static_files: ReactJS/dist/index.html

@@ -1,17 +1,17 @@
 runtime: nodejs10
 handlers:
 - url: /bundle.js
-  static_files: dist/bundle.js
-  upload: dist/bundle.js
+  static_files: ReactJS/dist/bundle.js
+  upload: ReactJS/dist/bundle.js
 
 - url: /?(.*\.(json|ico|js))$
-  static_files: dist/\1
-  upload: dist/.*\.(json|ico|js)$
+  static_files: ReactJS/dist/\1
+  upload: ReactJS/dist/.*\.(json|ico|js)$
 
 - url: /
-  static_files: dist/index.html
-  upload: dist/index.html
+  static_files: ReactJS/dist/index.html
+  upload: ReactJS/dist/index.html
 
 - url: /.*
-  static_files: dist/index.html
-  upload: dist/index.html
+  static_files: ReactJS/dist/index.html
+  upload: ReactJS/dist/index.html

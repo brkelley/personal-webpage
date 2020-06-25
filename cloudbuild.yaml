@@ -7,4 +7,4 @@ steps:
   entrypoint: npm
   args: ["run", "bundle", "--prefix", "ReactJS"]
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy", "--promote"]
+  args: ["app", "deploy", "app.yaml", "--promote"]

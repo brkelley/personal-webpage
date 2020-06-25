@@ -1,8 +1,5 @@
 runtime: nodejs10
 handlers:
-- url: /api/.*
-  script: auto
-
 - url: /bundle.js
   static_files: client/dist/bundle.js
   upload: client/dist/bundle.js

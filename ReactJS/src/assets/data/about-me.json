@@ -3,10 +3,11 @@
     "name": "Brendan Kelley",
     "nickname": "Bebo",
     "hometown": "Raleigh, NC",
-    "profession": "Front-End Engineer",
+    "current residence": "Upper West Side, New York",
+    "profession": "Senior Front-End Engineer, Tech Lead",
     "alma mater": "North Carolina State University"
   },
-  "biography": "I was born in Riverside, California, but moved to Raleigh, North Carolina when I was 2 years old. I have lived & worked in Raleigh ever since then. I went to high school at Enloe High School and graduated from North Carolina State University with a bachelor's degree in Computer Science in 2016. Since 6th grade, I have loved music. I've played trumpet, trombone, baritone, french horn, and tuba until I finally discovered drums & percussion. I played in my high school's drumline and in NC State's drumline. In my spare time, I hang out with my friends, go to the gym, travel, and play video games.",
+  "biography": "I was born in Riverside, California, but moved to Raleigh, North Carolina when I was 2 years old. I lived & worked in Raleigh for 26 years, until March 2022 when I moved to NYC. I went to high school at Enloe High School and graduated from North Carolina State University with a bachelor's degree in Computer Science in 2016. Since 6th grade, I have loved music. I've played trumpet, trombone, baritone, french horn, and tuba until I finally discovered drums & percussion. I played in my high school's drumline and in NC State's drumline. In my spare time, I hang out with my friends, go to the gym, travel, and play video games.",
   "originStory": "I started college intending to major in a chemistry field. However, after struggling through Chemical Engineering, Paper Science & Engineering, and Geology, I realized that Chemistry just isn't the field for me. My sister graduated NC State with a Computer Science degree and she recommended that I try a Computer Science class. I was hesitant at first (living in sibling's shadow is difficult), but I eventually cracked and took Introduction to Computer Science. I fell in love immediately. I found out what specialty I wanted when I had my PointSource internship. I loved coding in AngularJS and I knew then that I wanted to do front-end development.",
   "hobbies": [
     {
@@ -44,6 +45,16 @@
     "sisterfair3.jpg"
   ],
   "traveling": [
+    {
+      "name": "New York City",
+      "lat": 40.7128,
+      "lng": -74.0060
+    },
+    {
+      "name": "Charlotte",
+      "lat": 35.2271,
+      "lng": -80.8431
+    },
     {
       "name": "Puerto Plata, Dominican Republic",
       "lat": 19.816072,

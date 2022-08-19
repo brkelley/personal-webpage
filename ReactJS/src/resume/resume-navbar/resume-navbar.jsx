@@ -20,8 +20,7 @@ class ResumeNavbar extends Component {
         
         return (
             <div className="contact-info">
-                <span className="contact-info-item">{address}</span>
-                <span className="contact-info-item">{city}, {abbrState} {zipCode}</span>
+                <span className="contact-info-item">{city}, {abbrState}</span>
                 <span className="contact-info-item">{formattedPhoneNumber}</span>
             </div>
         );

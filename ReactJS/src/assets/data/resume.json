@@ -1,10 +1,10 @@
 {
   "contactInformation": {
-    "address": "425 N. Boylan Ave, Apt 332",
-    "city": "Raleigh",
-    "state": "North Carolina",
-    "abbrState": "NC",
-    "zipCode": 27603,
+    "address": "170 West 74th Street",
+    "city": "New York",
+    "state": "New York",
+    "abbrState": "NY",
+    "zipCode": 10023,
     "phoneNumber": 9192709877,
     "email": "brendan.bebo.kelley@gmail.com"
   },
@@ -47,7 +47,29 @@
   ],
   "professionalExperience": [
     {
-      "title": "Front-End Engineer",
+      "title": "Tech Lead",
+      "company": "Pendo.io",
+      "startDate": 1643748149000,
+      "endDate": "Present",
+      "type": "full-time",
+      "responsibilities": [
+        "Prioritized & balanced multiple different project initatives while communicating low, medium, and high confidence deadlines to engineering leadership",
+        "Led an engineering team to implement an automatic self-service payment system, utilizing Stripe's APIs and integrates with finance's current system of tracking & logging customer transactions",
+        "Led an engineering team to develop & release a 14-day fully-featured free trial of Pendo's platform, including messaging to the user and automatic downgrade when the trial was over",
+        "Mentored 2 engineers to reach the next level of their career growth, giving them quantifiable checkpoints and growing both their coding and leadership skills"
+      ],
+      "technologies": [
+        "VueJS / Vuex",
+        "HTML / Sass",
+        "Jest",
+        "AngularJS",
+        "Karma / Jasmine",
+        "REST API",
+        "JIRA"
+      ]
+    },
+    {
+      "title": "Senior Front-End Engineer",
       "company": "Pendo.io",
       "startDate": 1530565307000,
       "endDate": "Present",

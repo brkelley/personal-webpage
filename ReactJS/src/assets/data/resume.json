@@ -47,47 +47,48 @@
   ],
   "professionalExperience": [
     {
-      "title": "Tech Lead",
-      "company": "Pendo.io",
+      "title": "Technical Lead - Growth Team",
+      "company": "Pendo",
       "startDate": 1643748149000,
       "endDate": "Present",
       "type": "full-time",
       "responsibilities": [
-        "Prioritized & balanced multiple different project initatives while communicating low, medium, and high confidence deadlines to engineering leadership",
-        "Led an engineering team to implement an automatic self-service payment system, utilizing Stripe's APIs and integrates with finance's current system of tracking & logging customer transactions",
-        "Led an engineering team to develop & release a 14-day fully-featured free trial of Pendo's platform, including messaging to the user and automatic downgrade when the trial was over",
-        "Mentored 2 engineers to reach the next level of their career growth, giving them quantifiable checkpoints and growing both their coding and leadership skills"
+        "Designed and built a fully-functioning AI chatbot that answers users' questions from the basis of Pendo's Knowledge Base articles, and utilizing Google's Vertex API, DialogFlow document processing, and Pendo's iframe guidance architecture",
+        "Mentored an engineering team with a variety of experience levels, teaching them how to balance product requirements & deadlines with scalable, performant, and (relatively) low tech debt engineering design",
+        "Implemented an automatic limiter on Pendo's event data processing that filters out specific data points that are over the customer's contractual package, while retaining both accurate trending data, as well as high performance for the customer and keeping the customer's customers' end experience unaffected",
+        "Led the design and implementation of an automatic self-service payment system for Pendo Free customers, integrating with Stripe's APIs and synchronizing with Pendo's current financial deal-closing system of tracking & logging customer's contracts",
+        "Started a Product-Led Growth engineering team to create & support a more comprehensive Free & 14-day Free Trial experience on top of Pendo's platform, as well as coordinating & running UX experiments to increase Pendo Free customer's retention & vitality"
       ],
       "technologies": [
+        "Stripe, Paddle, & Avalara API Integration",
+        "Google DialogFlow",
+        "Machine Learning / LLM",
         "VueJS / Vuex",
         "HTML / Sass",
-        "Jest",
-        "AngularJS",
-        "Karma / Jasmine",
-        "REST API",
-        "JIRA"
+        "Cypress",
+        "Jest / Karma"
       ]
     },
     {
-      "title": "Senior Front-End Engineer",
-      "company": "Pendo.io",
+      "title": "Staff Frontend Engineer - Analytics Team",
+      "company": "Pendo",
       "startDate": 1530565307000,
       "endDate": "Present",
       "type": "full-time",
       "responsibilities": [
-        "Worked on a fast-paced full-stack team to deliver analytics tools so Pendo customers can see visual representations of their website's events",
-        "Worked on the website's migration from AngularJS to VueJS while delivering scalable code on startup deadlines",
-        "Created a retention-based analytics tool that shows Pendo's customers which visitors and accounts are staying per time range",
-        "Designed and built a \"Data Sandbox\" using an in-house aggregation language so customers can dynamically retrieve and view analytics in a meaningful way"
+        "Collaborated with the team on a Data Sandbox, using an in-house graphing query language to dynamically retrieve the customer's event data based on multiple different sourcing, sorting, filtering, and grouping parameters set by the user",
+        "Redesigned & refactored Pendo's dashboard architecture into VueJS to handle new dynamic widget requirements, while keeping up the high performance, drag n' drop functionality, and up-to-date user interaction standards",
+        "Created a retention chart that shows the customer their user's retention trends over a selected period, by using in-house graphing language and post-retrieval event processing on the frontend",
+        "Migrated the website's frontend monorepo from AngularJS to VueJS, converting all AngularJS-specific design decisions to a more framework-agnostic",
+        "Won 2 hackathon competitions: 1 project updated event processing to run with the most recent events so customers can see data immediately; 1 project created sentiment analysis analytics for customer's NPS survey responses using Google's Natural Language Processor"
       ],
       "technologies": [
         "VueJS / Vuex",
         "HTML / Sass",
-        "Jest",
+        "Cypress",
+        "Jest / Karma",
         "AngularJS",
-        "Karma / Jasmine",
-        "REST API",
-        "JIRA"
+        "REST API"
       ]
     },
     {
